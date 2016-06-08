@@ -1,14 +1,10 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{口試委員會審定書}{i}{Doc-Start}
+\contentsline {chapter}{Acknowledgements}{i}{chapter*.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Oral Examination Approval Form}{ii}{Doc-Start}
+\contentsline {chapter}{摘要}{ii}{chapter*.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Acknowledgements}{iii}{chapter*.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{摘要}{iv}{chapter*.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstract}{v}{chapter*.3}
+\contentsline {chapter}{Abstract}{iii}{chapter*.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
@@ -18,36 +14,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Program Model}{5}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Hoare Logic and Program Analysis}{7}{section.3.2}
+\contentsline {section}{\numberline {3.2}Hoare Logic and Program Analysis}{10}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Overview}{9}{chapter.4}
+\contentsline {chapter}{\numberline {4}Overview}{12}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Proving via Transformation}{13}{chapter.5}
+\contentsline {chapter}{\numberline {5}Proving via Transformation}{16}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Unwinding}{13}{section.5.1}
+\contentsline {section}{\numberline {5.1}Unwinding}{16}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Function Inlining Method}{14}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.1}Function Inlining Method}{17}{subsection.5.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Function Duplicating Method}{15}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Function Duplicating Method}{18}{subsection.5.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Under-approximation}{18}{section.5.2}
+\contentsline {section}{\numberline {5.2}Under-approximation}{21}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Approximating Functions}{18}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.1}Approximating Functions}{21}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Approximating Programs from Function Inlining Method}{19}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Approximating Programs from Function Inlining Method}{22}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Approximating Programs from Function Duplicating Method}{19}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.3}Approximating Programs from Function Duplicating Method}{22}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Computing Summaries}{20}{section.5.3}
+\contentsline {section}{\numberline {5.3}Computing Summaries}{23}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Checking Summaries}{22}{section.5.4}
+\contentsline {section}{\numberline {5.4}Checking Summaries}{25}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Correctness}{24}{section.5.5}
+\contentsline {section}{\numberline {5.5}Correctness}{27}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Experiments}{26}{chapter.6}
+\contentsline {chapter}{\numberline {6}Experiments}{29}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Implementation}{26}{section.6.1}
+\contentsline {section}{\numberline {6.1}Implementation}{29}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Experiments}{27}{section.6.2}
+\contentsline {section}{\numberline {6.2}Experiments}{30}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}
+\contentsline {chapter}{\numberline {7}Conclusion}{35}{chapter.7}

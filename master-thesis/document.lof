@@ -12,30 +12,30 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces McCarthy 91\relax }}{7}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces McCarthy 91\relax }}{9}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Under-approximation of McCarthy 91\relax }}{11}{figure.caption.9}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Under-approximation of McCarthy 91\relax }}{14}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Check Summary in McCarthy 91\relax }}{11}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Check Summary in McCarthy 91\relax }}{14}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Unwinding McCarthy 91\relax }}{12}{figure.caption.11}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Unwinding Function Calls\relax }}{14}{figure.caption.12}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Under-approximation\relax }}{19}{figure.caption.15}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Updating a Summary\relax }}{21}{figure.caption.18}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Instantiating a Summary\relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Unwinding McCarthy 91\relax }}{15}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces The Execution Flow of \textsc {CPArec}\relax }}{27}{figure.caption.21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Unwinding Function Calls\relax }}{17}{figure.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Accumulated Score over Time\relax }}{31}{figure.caption.26}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Under-approximation\relax }}{22}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Updating a Summary\relax }}{24}{figure.caption.18}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Instantiating a Summary\relax }}{26}{figure.caption.19}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces The Execution Flow of \textsc {CPArec}\relax }}{30}{figure.caption.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Accumulated Score over Time\relax }}{34}{figure.caption.26}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

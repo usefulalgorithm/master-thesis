@@ -1,26 +1,24 @@
-\BOOKMARK [0][-]{Doc-Start}{\123\343\212\146\131\324\124\341\147\003\133\351\133\232\146\370}{}% 1
-\BOOKMARK [0][-]{Doc-Start}{Oral Examination Approval Form}{}% 2
-\BOOKMARK [0][-]{chapter*.1}{Acknowledgements}{}% 3
-\BOOKMARK [0][-]{chapter*.2}{\144\130\211\201}{}% 4
-\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 6
-\BOOKMARK [0][-]{chapter.2}{Related Works}{}% 7
-\BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 8
-\BOOKMARK [1][-]{section.3.1}{Program Model}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.2}{Hoare Logic and Program Analysis}{chapter.3}% 10
-\BOOKMARK [0][-]{chapter.4}{Overview}{}% 11
-\BOOKMARK [0][-]{chapter.5}{Proving via Transformation}{}% 12
-\BOOKMARK [1][-]{section.5.1}{Unwinding}{chapter.5}% 13
-\BOOKMARK [2][-]{subsection.5.1.1}{Function Inlining Method}{section.5.1}% 14
-\BOOKMARK [2][-]{subsection.5.1.2}{Function Duplicating Method}{section.5.1}% 15
-\BOOKMARK [1][-]{section.5.2}{Under-approximation}{chapter.5}% 16
-\BOOKMARK [2][-]{subsection.5.2.1}{Approximating Functions}{section.5.2}% 17
-\BOOKMARK [2][-]{subsection.5.2.2}{Approximating Programs from Function Inlining Method}{section.5.2}% 18
-\BOOKMARK [2][-]{subsection.5.2.3}{Approximating Programs from Function Duplicating Method}{section.5.2}% 19
-\BOOKMARK [1][-]{section.5.3}{Computing Summaries}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.4}{Checking Summaries}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.5}{Correctness}{chapter.5}% 22
-\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 23
-\BOOKMARK [1][-]{section.6.1}{Implementation}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.2}{Experiments}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 26
+\BOOKMARK [0][-]{chapter*.1}{Acknowledgements}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{\144\130\211\201}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
+\BOOKMARK [0][-]{chapter.2}{Related Works}{}% 5
+\BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Program Model}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Hoare Logic and Program Analysis}{chapter.3}% 8
+\BOOKMARK [0][-]{chapter.4}{Overview}{}% 9
+\BOOKMARK [0][-]{chapter.5}{Proving via Transformation}{}% 10
+\BOOKMARK [1][-]{section.5.1}{Unwinding}{chapter.5}% 11
+\BOOKMARK [2][-]{subsection.5.1.1}{Function Inlining Method}{section.5.1}% 12
+\BOOKMARK [2][-]{subsection.5.1.2}{Function Duplicating Method}{section.5.1}% 13
+\BOOKMARK [1][-]{section.5.2}{Under-approximation}{chapter.5}% 14
+\BOOKMARK [2][-]{subsection.5.2.1}{Approximating Functions}{section.5.2}% 15
+\BOOKMARK [2][-]{subsection.5.2.2}{Approximating Programs from Function Inlining Method}{section.5.2}% 16
+\BOOKMARK [2][-]{subsection.5.2.3}{Approximating Programs from Function Duplicating Method}{section.5.2}% 17
+\BOOKMARK [1][-]{section.5.3}{Computing Summaries}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.4}{Checking Summaries}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.5}{Correctness}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 21
+\BOOKMARK [1][-]{section.6.1}{Implementation}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.2}{Experiments}{chapter.6}% 23
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 24

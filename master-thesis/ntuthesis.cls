@@ -1,4 +1,4 @@
-% Author: Hsieh, Chiao
+% Author: Lii, Tsung-Ju
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ntuthesis}[2015/05/08 NTU Thesis Class]
 
