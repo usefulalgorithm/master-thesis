@@ -1,8 +1,54 @@
 
 \chapter{Preliminaries}\label{ch:preliminaries}
 
-
 \section{Program Model}\label{sec:model}
+
+Let $\mathcal{X}$ be the set of program variables and $\mathcal{F}$ the set of function and predicate symbols. We use $\mathcal{X'}$ for the set $\{x'| x \in \mathcal{X}\}$. The set $\mathcal{T}[\mathcal{X}, \mathcal{F}]$ of \textit{transition formulae} consists of well-formed first-order logic formulae over $\mathcal{X}$, $\mathcal\mathcal{X'}$, and $\mathcal{F}$. For a transition $f \in {T}[\mathcal{X}, \mathcal{F}]$ and $\mathit{n} \in \mathbb{N}$, we use $f^{n}$ to denote the formula obtained from \textit{f} by replacing all its free variables, $x \in \mathcal{X}$ and $x' \in \mathcal{X'}$, with $x^{ \langle n \rangle }$ and $x^{\langle n+1 \rangle }$. 
+
+\todo[inline]{Extend to program with multiple procedures and procedure calls}
+In this work, a program is represented as a single procedure using a control flow graph. A \emph{control flow graph (CFG)} is a graph $G = (V, E, v_i, v_r, V_e, \mathcal{X}_{FP})$, where $V = V_b \cup V_s$ is a finite set of \emph{nodes} consisting of disjoint sets of \emph{branching} nodes $V_b$ and \emph{sequential} nodes $V_s$, $v_i \in V$, is the \emph{initial} node, $v_r$ is the \emph{return} node, $V_e \subseteq V$ is the \emph{error} nodes, $\mathcal{X}_{FP} \subseteq \mathcal{X}$ is the eset of formal parameters, and $E$ is a finite subset of \emph{edges} such that $E \subseteq V \times \mathcal{T[X,F]} \times V$. Also, the following conditions should hold in a CFG:
+\begin{itemize}
+	\item For any branching node $v_b \in V_b$, there are exactly two nodes $v_0' , v_1' \in V$ such that $(v_b, f_0, v_0'), (v_b, f_1, v_1') \in E$, where $f_0, f_1 \in \mathcal{T[X,F]}$ are transition formulae.
+	
+	\item For any non-returning sequential nodes $v_s \in V_s \setminus \{v_r\}$, there is exactly one node $v'$ with $(v, f, v') \in E$.
+	
+	\todo[inline]{Need to rephrase this one????}
+	\item For the return node $v_r$, then for any $f \in \mathcal{T[X,F]}$, there is no $v' \in V$ such that $(v, f, v') \in E$ .
+\end{itemize}
+A node $v'$ is a \emph{successor} of $v$ if there is a transition $f \in \mathcal{T[X,F]}$ such that $(v, f, v') \in E$. Moreover, assume the two successors $v_0'$ and $v_1'$ of a branching node $v$ are ordered. Intuitively, the "1" is for the \emph{if} branch, while the "0" is for the \emph{else} branch. We then call $v_0'$ and $v_1'$ as the \emph{0-successor} and \emph{1-successor}. $f_0$ and $f_1$ are called \emph{0-transition} and \emph{1-transition} in the same manner. 
+
+The definition of a CFG allows describing nondeterministic choices, which are used extensively to describe the environment. A nondeterministic choice from a branching node $v$ can be represented by defining both the 0-transition and the 1-transition formulae as $\bigwedge_{x \in \mathcal{X}} x = x'$.
+
+A \emph{path} in a CFG $G$ is a sequence $\pi = \langle v_0, f_1, v_1, f_2, v_2, \dots , f_m, v_m \rangle$, such that $v_0 = v_i$ and $(v_j, f_{j+1}, v_{j+1}) \in E$ for every $j \in [0, m)$. The path $\pi$ is \emph{feasible} if the path formula $\bigwedge_{k=1}^m f_k^{\langle k \rangle}$ is satisfiable. It is an \emph{error} path if $v_j \in V_e$ for some $j \in [0,m)$. Our objective is to check if $G$ contains a \emph{feasible error path}.
+
+A \emph{sequence} $w= a_1a_2a_3 \dots a_n$ with $a_j \in \{0,1\}$, where $j \in [0,m)$, is called a \emph{word} over \{0,1\}. The \emph{length} of $w$ is $|w|$, which is equivalent to $n$. The word with length 0 is an \emph{empty} word $\lambda$. We use $w[j]$ to denote the $j_th$ symbol $a_j$ in a word $w$. If $u, w$ are words over \{0,1\}, then we denote the \emph{concatenation} of $u$ and $w$ as $u \cdot w$. A \emph{language} $L$ over \{0,1\} is a set of words over \{0,1\}.
+
+We now introduce the function \textsf{decision}, which maps a path $\pi$ of a CFG $G$ to a sequence of decisions made in the branching nodes traversed by $\pi$. Formally, \textsf{decision} is a function from paths to words over {0,1} defined recursively as follows:
+\begin{multline*}
+	\mathsf{decision}(\langle v_0, f_1, v_1, f_2, v_2, \dots, f_m, v_m \rangle) \\
+	= \mathsf{decision}(\langle v_0, f_1 \rangle) \cdot \mathsf{decision}(\langle v_1, f_2, v_2, f_3, v_3, \dots, f_m, v_m \rangle)
+\end{multline*}
+where
+\begin{equation*}
+	\begin{array}{rcl}
+		\mathsf{decision}(\langle v \rangle) & = & \lambda \\
+		\mathsf{decision}(\langle v, f \rangle) & = & 
+		\begin{cases}
+			\lambda & \text{if } v \in V_s \\
+			0 		& \text{if } v \in V_b \text{ and } \\
+					& f \text{ is the 0-transition formula of }v \\
+			1		& \text{if } v \in V_b \text{ and } \\
+					& f \text{ is the 1-transition formula of }v 	 
+		\end{cases}
+	\end{array}
+\end{equation*} 
+
+For a path $\pi$, \textsf{decision}($\pi$) is the \emph{decision vector} of $\pi$. Consequently, we can define \emph{decision vectors} of a set of paths $\Pi$ as $\mathsf{decision}(\Pi) = {\mathsf{decision}(\pi) | \pi \in \Pi}$.
+
+A \emph{finite automaton} (with $\lambda$-moves) $A$ is a tuple $A = (\Sigma, Q, q_i, \Delta, F)$ consisting a finite \emph{alphabet} $\Sigma$, a finite set of \emph{states}, an \emph{initial state} $q_i \in Q$, a \emph{transition relation} $\Delta \subseteq Q \times (\Sigma \cup \{\lambda\}) \times Q$, and a set of \emph{accepting states} $F \subseteq Q$. A transition $(q, \lambda, q') \in \Delta$ is a \emph{$\lambda$-transition}. A word $w$ over $\Delta$ is \emph{accepted} by $A$ if there are states $q_0, \dots, q_m \in Q$ and symbols $a_1, \dots, a_m \in (\Sigma \cup \{\lambda\})$, such that $w = a_1a_2 \dots a_m$, there is a transition $(q_j, a_{j+1}, q_{j+1}) \in \Delta$ for every $j \in [0,m)$, $q_0 = q_i$, and $q_m \in F$. The \emph{language} of $A$ is defined as $L(A) = \{w|w \text{ is accepted by } A\} $. A language $R$ is regular if $R = L(A)$ for some finite automaton $A$. The finite automaton $A$ is \emph{detereministic} if its transition relation is a function from $Q \times \Sigma$ to $Q$. For any finite automaton A, there exists a deterministic finite automaton (DFA) $B$ such that $L(A) = L(B)$. 
+
+A \emph{pushdown automaton} (PDA) is a tuple $P = (\Sigma, Q, \Gamma, q_i, \Delta, F)$ consisting of a finite \emph{input alphabet} $\Sigma$, a finite set of \emph{states} $Q$, a finite \emph{stack alphabet} $\Gamma$, an \emph{initial state} $q_i \in Q$, a set of \emph{finite states} $F \subseteq Q$, and \emph{transition relation} $\Delta \subseteq Q \times (\Sigma \cup \{\lambda\}) \times (\Gamma \cup \{\lambda\}) \times (\Gamma \cup \{\lambda\}) \times Q$. We use $(q, [a;b/c], q')$ to denote the transition $(q, a, b, c, q')$, and we simplify $(q, [a;\lambda/\lambda], q')$ to $(q, a, q')$. A \emph{configuration} of $P$ is a tuple $(q,\gamma) \in Q \times \Gamma^*$. A word $w$ over $\Sigma$ is \emph{accepted} by $P$ if there is a sequence of configurations $(q_0, \gamma_0), \dots, (q_m, \gamma_m) \in Q \times \Sigma^*$ and a sequence of symbols $a_1, \dots, a_m \in (\Sigma \cup \{\lambda\})$, such that $w=a_1a_2\dots a_m, q_0 = q_i, \gamma_0 = \epsilon, q_m \in F$, and for every $j \in [0,m)$ there are some $b_j, b_{j+1} \in (\Gamma \cup \{\lambda\})$ and $\gamma'_j, \gamma'_{j+1} \in \Gamma^*$ such that $\gamma_j = b_j\gamma'_j, \gamma_{j+1} = b_{j+1}\gamma'_{j+1}$, and there is $(q_j, [a_{j+1};b_j/b_{j+1}], q_{j+1}) \in \Delta$. The language of $P$ is defined as $L(P) = \{w | w \text{ is accepted by } P\}$.
+
 
 We consider a variant of the WHILE language from~\cite[Sec. 1.2]{NielsonHC99}:
 \begin{equation*}
