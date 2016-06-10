@@ -5,20 +5,22 @@
 \BOOKMARK [0][-]{chapter.2}{Related Works}{}% 5
 \BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 6
 \BOOKMARK [1][-]{section.3.1}{Program Model}{chapter.3}% 7
-\BOOKMARK [1][-]{section.3.2}{Hoare Logic and Program Analysis}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Two Classes of Automata}{chapter.3}% 8
 \BOOKMARK [0][-]{chapter.4}{Overview}{}% 9
-\BOOKMARK [0][-]{chapter.5}{Proving via Transformation}{}% 10
-\BOOKMARK [1][-]{section.5.1}{Unwinding}{chapter.5}% 11
-\BOOKMARK [2][-]{subsection.5.1.1}{Function Inlining Method}{section.5.1}% 12
-\BOOKMARK [2][-]{subsection.5.1.2}{Function Duplicating Method}{section.5.1}% 13
-\BOOKMARK [1][-]{section.5.2}{Under-approximation}{chapter.5}% 14
-\BOOKMARK [2][-]{subsection.5.2.1}{Approximating Functions}{section.5.2}% 15
-\BOOKMARK [2][-]{subsection.5.2.2}{Approximating Programs from Function Inlining Method}{section.5.2}% 16
-\BOOKMARK [2][-]{subsection.5.2.3}{Approximating Programs from Function Duplicating Method}{section.5.2}% 17
-\BOOKMARK [1][-]{section.5.3}{Computing Summaries}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.4}{Checking Summaries}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.5}{Correctness}{chapter.5}% 20
-\BOOKMARK [0][-]{chapter.6}{Experiments}{}% 21
-\BOOKMARK [1][-]{section.6.1}{Implementation}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.2}{Experiments}{chapter.6}% 23
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 24
+\BOOKMARK [0][-]{chapter.5}{PAC Automata Learning}{}% 10
+\BOOKMARK [0][-]{chapter.6}{Error Decision Vector}{}% 11
+\BOOKMARK [0][-]{chapter.7}{Proving via Transformation}{}% 12
+\BOOKMARK [1][-]{section.7.1}{Unwinding}{chapter.7}% 13
+\BOOKMARK [2][-]{subsection.7.1.1}{Function Inlining Method}{section.7.1}% 14
+\BOOKMARK [2][-]{subsection.7.1.2}{Function Duplicating Method}{section.7.1}% 15
+\BOOKMARK [1][-]{section.7.2}{Under-approximation}{chapter.7}% 16
+\BOOKMARK [2][-]{subsection.7.2.1}{Approximating Functions}{section.7.2}% 17
+\BOOKMARK [2][-]{subsection.7.2.2}{Approximating Programs from Function Inlining Method}{section.7.2}% 18
+\BOOKMARK [2][-]{subsection.7.2.3}{Approximating Programs from Function Duplicating Method}{section.7.2}% 19
+\BOOKMARK [1][-]{section.7.3}{Computing Summaries}{chapter.7}% 20
+\BOOKMARK [1][-]{section.7.4}{Checking Summaries}{chapter.7}% 21
+\BOOKMARK [1][-]{section.7.5}{Correctness}{chapter.7}% 22
+\BOOKMARK [0][-]{chapter.8}{Experiments}{}% 23
+\BOOKMARK [1][-]{section.8.1}{Implementation}{chapter.8}% 24
+\BOOKMARK [1][-]{section.8.2}{Experiments}{chapter.8}% 25
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 26
