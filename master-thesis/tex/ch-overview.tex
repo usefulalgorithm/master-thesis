@@ -1,80 +1,84 @@
 
 \chapter{Overview}\label{ch:overview}
 
-Let $G$ be a CFG of a program. Our objective is to determine whether a feasible error path exists in $G$. In a more formal convention, consider the set of feasible paths $\Pi \subseteq G$ and the set of error paths $\mathcal{B} \subseteq G$. We call the languages $\mathsf{decision}(\Pi)$ and $\mathsf{decision}(\mathcal{B})$ over the alphabet $\{0,1\}$ as \emph{feasible decision vectors} and \emph{error decision vectors} respectively. If there are no feasible paths that are also error paths, then we can deduce the program is correct, since no feasible path in $G$ can reach any error node $v \in V_e$. In other words, the program is correct if $\mathsf{decision}(\Pi) \cap \mathsf{decision}(\mathcal{B}) = \emptyset$. 
+Let $G$ be a CFG of a program. Our objective is to determine whether a feasible error path exists in $G$. In a more formal convention, consider the set of feasible paths $\Pi \subseteq G$ and the set of error paths $\mathcal{B} \subseteq G$. We call the languages $\DEC	(\Pi)$ and $\DEC(\mathcal{B})$ over the alphabet $\{0,1\}$ as \emph{feasible decision vectors} and \emph{error decision vectors} respectively. If there are no feasible paths that are also error paths, then we can deduce the program is correct, since no feasible path in $G$ can reach any error node $v \in V_e$. In other words, the program is correct if $\DEC(\Pi) \cap \DEC(\mathcal{B}) = \emptyset$. 
 
-Representing $\mathsf{decision}(\Pi)$, the language of all feasible decision vectors in $G$, is actually quite challenging. In general, this language might not be regular or even computable. In our procedure, we construct a candidate finite automaton $C$ that approximates $\mathsf{decision}(\Pi)$. Such a candidate automaton is constructed using a \emph{probably approximately correct} (PAC) online automata learning algorithm. PAC learning provides statistical guarantees about the correctness of $C$: $C$ is \emph{$PAC(\epsilon, \delta)$-correct}, i.e., with \emph{confidence} $\delta$, the deviation of $L(C)$ from $\mathsf{decision}(\Pi)$ is less than \emph{error rate} $\epsilon$. A more formal explanation of the terms and reasonings within the PAC learning framework is given in Chapter \ref{ch:learning}.
+Representing $\DEC(\Pi)$, the language of all feasible decision vectors in $G$, is actually quite challenging. In general, this language might not be regular or even computable. In our procedure, we construct a candidate finite automaton $C$ that approximates $\DEC(\Pi)$. Such a candidate automaton is constructed using a \emph{probably approximately correct} (PAC) online automata learning algorithm. PAC learning provides statistical guarantees about the correctness of $C$: $C$ is \emph{$\PAC$}, i.e., with \emph{confidence} $\delta$, the deviation of $L(C)$ from $\DEC(\Pi)$ is less than \emph{error rate} $\epsilon$. A more formal explanation of the terms and reasonings within the PAC learning framework is given in Chapter \ref{ch:PAC}.
 
-Constructing a finite automaton $B$ that accepts the set of all error decision vectors $\mathsf{decision}(\mathcal{B})$ is much more straightforward in comparison. Intuitively, states of $B$ corresponds to nodes in $G$, the initial state of $B$ corresponds to the initial node of $G$, and the final states of $B$ corresponds to $G$'s error nodes. An edge from a sequential node is mapped to a $\lambda$-transition, and the edges from a branching node to its 0- and 1-successors are mapped over symbols 0 and 1 respectively. We will go into the details of this construction in Chapter \ref{ch:error}.
+Constructing a finite automaton $B$ that accepts the set of all error decision vectors $\DEC(\mathcal{B})$ is much more straightforward in comparison. Intuitively, states of $B$ corresponds to nodes in $G$, the initial state of $B$ corresponds to the initial node of $G$, and the final states of $B$ corresponds to $G$'s error nodes. An edge from a sequential node is mapped to a $\lambda$-transition, and the edges from a branching node to its 0- and 1-successors are mapped over symbols 0 and 1 respectively. We will go into the details of this construction in Chapter \ref{ch:error}.
 
-An overview of our learning procedure is given in Figure \ref{figure:overview}
-
-\todo[inline]{Add the reference to the Sections!!!!!!}
 \begin{figure}
-  \centering
-  \begin{tikzpicture}[node distance = 2cm, auto]
-  \newcommand{\DEC}[0]{\mathsf{decision}}
-  \newcommand{\MEM}[0]{\mathit{Mem.}}
-  \newcommand{\EQ}[0]{\mathit{Eq.}}
-  \newcommand{\PAC}[0] {PAC(\epsilon, \delta)\text{-correct}}
-  \tikzstyle{decision} = [diamond, draw, fill=blue!20,
-  text width=2.5cm, text centered, inner sep=0pt]
-  \tikzstyle{block} = [rectangle, draw, fill=blue!20, 
-  text centered, rounded corners, minimum height=0.8cm]
-  \tikzstyle{line} = [draw, -latex'];
-  
-  % Draw Boxes
-  
-  \draw[rounded corners, fill=green!20]
-  (0cm,1cm) rectangle +(6cm,-2cm);
-  \node[text centered, text width=6cm] 
-  at (3cm,0cm) {\textbf{PAC Automata Learning Algorithm}\\(Section )};
-  \draw[rounded corners, fill=yellow!20]
-  (0cm,6cm) rectangle +(6cm,-4cm);    
-  \node[text badly centered, text width=6cm] at (3cm,5.4cm)
-  {\textbf{Mechanical Teacher}};
-  \draw[rounded corners, fill=blue!20]
-  (0.3cm,5cm) rectangle +(2.5cm,-2.6cm);
-  \node[text badly centered, text width=6cm] at (1.55cm,3.7cm) 
-  {\text{Resolving}\\
-  	\text{Membership} \\
-  	\text{Queries} \\
-  	\text{(Section)}};
-  \draw[rounded corners, fill=blue!20]
-  (3.2cm,5cm) rectangle +(2.5cm,-2.6cm);
-  \node[text badly centered, text width=6cm] at (4.45cm,3.7cm) 
-  {\text{Resolving}\\
-  	\text{Equivalence} \\
-  	\text{Queries} \\
-  	\text{by Sampling} \\
-  	\text{(Section)}};
-  \draw[rounded corners, fill=red!20]
-  (-0.3cm,9.2cm) rectangle +(3cm,-2.9cm);
-  \node[text badly centered, text width=6cm] at (1.2cm,7.75cm)
-  {\text{Feasible} \\
-  	\text{Error} \\
-  	\text{Decision} \\
-  	\text{Vector} \\
-  	\text{Found}};
-  \draw[rounded corners, fill=cyan!20]
-  (3.1cm,9.2cm) rectangle +(3.6cm,-2.9cm);
-  \node[text badly centered, text width=6cm] at (4.9cm,7.75cm)
-  {\text{System is}\\
-  	$\PAC$};
-  
-  % Draw Arrows
-  
-  \path [line] (1,1) -- node {$\MEM(w)$} (1,2.4);
-  \path [line] (1.5,2.4) -- node {yes/no} (1.5,1);
-  \path [line] (4.5,1) -- node {$\EQ(C)$} (4.5,2.4);
-  \path [line] (5,2.4) -- node {yes/counterexample} (5,1);
-  \path [line](0,0) -- (-1,0) -- (-1, 7.25) -- (-0.3, 7.25);
-  \path [line](5.7,4.2) -- (7.2,4.2) -- (7.2, 7.25) -- (6.7, 7.25);
-  \path [line](5.7,3.2) -- (7.7,3.2) -- (7.7, 9.7) -- (1.2, 9.7) -- (1.2, 9.2);
-  \end{tikzpicture}
-  \caption{Components of our procedure}
-  \label{figure:overview}
+	\centering
+	\begin{tikzpicture}[node distance = 2cm, auto]
+	\newcommand{\MEM}[0]{\mathit{Mem.}}
+	\newcommand{\EQ}[0]{\mathit{Eq.}}
+	\tikzstyle{decision} = [diamond, draw, fill=blue!20,
+	text width=2.5cm, text centered, inner sep=0pt]
+	\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+	text centered, rounded corners, minimum height=0.8cm]
+	\tikzstyle{line} = [draw, -latex'];
+	
+	% Draw Boxes
+	
+	\draw[rounded corners, fill=green!20]
+	(0cm,1cm) rectangle +(6cm,-2cm);
+	\node[text centered, text width=6cm] 
+	at (3cm,0cm) {\textbf{PAC Automata Learning Algorithm}\\(Chapter \ref{ch:PAC})};
+	\draw[rounded corners, fill=yellow!20]
+	(0cm,6cm) rectangle +(6cm,-4cm);    
+	\node[text badly centered, text width=6cm] at (3cm,5.4cm)
+	{\textbf{Mechanical Teacher}};
+	\draw[rounded corners, fill=blue!20]
+	(0.3cm,5cm) rectangle +(2.5cm,-2.6cm);
+	\node[text badly centered, text width=6cm] at (1.55cm,3.7cm) 
+	{\text{Resolving}\\
+		\text{Membership} \\
+		\text{Queries} \\
+		\text{(Chapter \ref{ch:mem})}};
+	\draw[rounded corners, fill=blue!20]
+	(3.2cm,5cm) rectangle +(2.5cm,-2.6cm);
+	\node[text badly centered, text width=6cm] at (4.45cm,3.7cm) 
+	{\text{Resolving}\\
+		\text{Equivalence} \\
+		\text{Queries} \\
+		\text{by Sampling} \\
+		\text{(Chapter \ref{ch:eq})}};
+	\draw[rounded corners, fill=red!20]
+	(-0.3cm,9.2cm) rectangle +(3cm,-2.9cm);
+	\node[text badly centered, text width=6cm] at (1.2cm,7.75cm)
+	{\text{Feasible} \\
+		\text{Error} \\
+		\text{Decision} \\
+		\text{Vector} \\
+		\text{Found}};
+	\draw[rounded corners, fill=cyan!20]
+	(3.1cm,9.2cm) rectangle +(3.6cm,-2.9cm);
+	\node[text badly centered, text width=6cm] at (4.9cm,7.75cm)
+	{\text{System is}\\
+		$\PAC$};
+	
+	% Draw Arrows
+	
+	\path [line] (1,1) -- node {$\MEM(w)$} (1,2.4);
+	\path [line] (1.5,2.4) -- node {yes/no} (1.5,1);
+	\path [line] (4.5,1) -- node {$\EQ(C)$} (4.5,2.4);
+	\path [line] (5,2.4) -- node {yes/counterexample} (5,1);
+	\path [line](0,0) -- (-1,0) -- (-1, 7.25) -- (-0.3, 7.25);
+	\path [line](5.7,4.2) -- (7.2,4.2) -- (7.2, 7.25) -- (6.7, 7.25);
+	\path [line](5.7,3.2) -- (7.7,3.2) -- (7.7, 9.7) -- (1.2, 9.7) -- (1.2, 9.2);
+	\end{tikzpicture}
+	\caption{Components of our learning procedure}
+	\label{figure:overview}
 \end{figure}
+
+An overview of our learning procedure is given in Figure \ref{figure:overview}. This procedure is actually similar in structure to the one of \cite{Angluin87}. There are two main components in the procedure: the \emph{teacher} and the \emph{learning algorithm}. The learning algorithm presents two queries to the teacher: \emph{membership query} ("Is a given decision vector feasible in the program?") and \emph{equivalence query} ("Is a given candidate finite automaton $\PAC$?"). The teacher is omniscient on the program behaviors, thus is able to resolve the queries correctly. Also, the teacher is able to test whether a decision vector is actually an error decision vector. By posing these queries, either the learning algorithm iteratively constructs a $\PAC$ approximation of the program, or our procedure finds a feasible error decision vector.
+
+As with other online learning-based techniques, we need to devise a mechanical teacher that resolves queries presented by the learning algorithm. Resolving membership queries (i.e., membership in the set of feasible decision vectors $\DEC(\Pi)$) is relatively simple. For example, when given a decision vector $d$, we can obtain its corresponding path $\pi$ by unfolding the CFG $G$ according to $d$, and use an off-the-shelf solver to decide whether $\pi$ is feasible or not. (See Chapter \ref{ch:mem})
+
+When the automata learning algorithm infer a candidate finite automaton $C$, we need to check whether $L(C)$ approximates $\DEC(\Pi)$, i.e., whether $C$ is $\PAC$. Since comparing $L(C)$ directly with $\DEC(\Pi)$ is not practical, we employ the sampling-based approximate equivalence technique of PAC learning. While being generally unsound, this technique still provides statistical guarantee about the correctness of the inferred candidate automaton. More details on how equivalence queries are made can be found in \ref{ch:eq}. The details of our learning-based procedure is in Chapter \ref{ch:learning_proc}. 
+
+\todo[inline]{Sampling-based procedure... done by me... probably not very well written?}
+In addition to the learning-based procedure, we propose a sampling-based procedure that provides the same statistical guarantees to a program, while excluding the overhead from constructing a candidate automaton in the learning-based procedure. Although the learning-based procedure can synthesize a program model that can be reused for different analyses, it comes with additional cost for model synthesis. The idea behind the sampling-based procedure is also based on PAC learning, but since no effort is spent on constructing a candidate automaton, the statistical guarantees provided by the sampling-based procedure can be much tighter than the learning-based procedure when given the same amount of computational resources. More descriptions on the sampling-based procedure is in \ref{ch:sampling_proc}.
 
 Let \method{BasicAnalyzer} denote a recursion-free inductive program analyzer,
 and let a program $\prog{P}=\{G^{\fun{main}}\}\cup\{G^{\fun{f}} : \fun{f}\mbox{ is a function}\}$

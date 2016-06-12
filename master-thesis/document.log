@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  10 JUN 2016 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  12 JUN 2016 17:33
 entering extended mode
 **./document.tex
 (document.tex
@@ -1762,9 +1762,10 @@ File: english.lbx 2015/10/21 v3.1 biblatex localization (PK/JW/AB)
 
 (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
 (tex/abstractEN.aux) (tex/ch-introduction.aux) (tex/ch-related.aux)
-(tex/ch-preliminaries.aux) (tex/ch-overview.aux) (tex/ch-learning.aux)
-(tex/ch-error.aux) (ch-proving.aux) (tex/ch-experiments.aux)
-(tex/ch-conclusion.aux))
+(tex/ch-preliminaries.aux) (tex/ch-overview.aux) (tex/ch-pac.aux)
+(tex/ch-equivalence.aux) (tex/ch-membership.aux) (tex/ch-error.aux)
+(tex/ch-learning.aux) (tex/ch-procedure_calls.aux) (tex/ch-sampling.aux)
+(ch-proving.aux) (tex/ch-experiments.aux) (tex/ch-conclusion.aux))
 \openout1 = `document.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 48.
@@ -2120,11 +2121,23 @@ File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 \openout6 = `document.toc'.
 
  [5]
-(document.lof)
+(document.lof
+LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 15.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newtx\t1ntxtt.fd"
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 15.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 8.8pt on input line 15.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 6.6pt on input line 15.
+)
 \tf@lof=\write7
 \openout7 = `document.lof'.
 
- [6
+[6
 
 ] (document.lot)
 \tf@lot=\write8
@@ -2196,63 +2209,89 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 37.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 37.
- [6] [7])
-[8]
+ [6] [7]
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 59.
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 59.
+LaTeX Font Info:    Font shape `T1/ntxtt/bx/n' will be
+(Font)              scaled to size 10.0pt on input line 60.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 62.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\t1txtt.fd"
+File: t1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/it' in size <10> not available
+(Font)              Font shape `T1/txtt/m/sl' tried instead on input line 62.
+ [8]) [9]
 \openout2 = `tex/ch-overview.aux'.
 
- (tex/ch-overview.tex
+
+(tex/ch-overview.tex
 Chapter 4.
-[9
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 8.8pt on input line 6.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 6.6pt on input line 6.
+[10
 
 
 
 ]
 Missing character: There is no ; in font nullfont!
-LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 80.
-
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\newtx\t1ntxtt.fd"
-File: t1ntxtt.fd 2012/04/20 v3.1
-)
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 80.
- [10]
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.8pt on input line 128.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 6.6pt on input line 128.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 154.
+ [11] [12]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 154.
+(Font)              scaled to size 10.0pt on input line 158.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 154.
+(Font)              scaled to size 7.3pt on input line 158.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 154.
+(Font)              scaled to size 5.5pt on input line 158.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 154.
+(Font)              scaled to size 8.99994pt on input line 158.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 6.56995pt on input line 154.
+(Font)              scaled to size 6.56995pt on input line 158.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 4.94997pt on input line 154.
+(Font)              scaled to size 4.94997pt on input line 158.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 154.
+(Font)              scaled to size 10.0pt on input line 158.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 7.3pt on input line 154.
+(Font)              scaled to size 7.3pt on input line 158.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 5.5pt on input line 154.
+(Font)              scaled to size 5.5pt on input line 158.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 154.
+(Font)              scaled to size 7.3pt on input line 158.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 7.3pt on input line 154.
-LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 5.5pt on input line 154.
+(Font)              scaled to size 5.5pt on input line 158.
+ [13] [14]) [15] [16]
+\openout2 = `tex/ch-pac.aux'.
 
-[11] [12]) [13] [14]
-\openout2 = `tex/ch-learning.aux'.
-
- (tex/ch-learning.tex
+ (tex/ch-pac.tex
 Chapter 5.
-) [15
+) [17
+
+
+
+]
+\openout2 = `tex/ch-equivalence.aux'.
+
+ (tex/ch-equivalence.tex
+Chapter 6.
+) [18
+
+
+
+]
+\openout2 = `tex/ch-membership.aux'.
+
+ (tex/ch-membership.tex
+Chapter 7.
+) [19
 
 
 
@@ -2260,8 +2299,35 @@ Chapter 5.
 \openout2 = `tex/ch-error.aux'.
 
  (tex/ch-error.tex
-Chapter 6.
-) [16
+Chapter 8.
+) [20
+
+
+
+]
+\openout2 = `tex/ch-learning.aux'.
+
+ (tex/ch-learning.tex
+Chapter 9.
+) [21
+
+
+
+]
+\openout2 = `tex/ch-procedure_calls.aux'.
+
+ (tex/ch-procedure_calls.tex
+Chapter 10.
+) [22
+
+
+
+]
+\openout2 = `tex/ch-sampling.aux'.
+
+ (tex/ch-sampling.tex
+Chapter 11.
+) [23
 
 
 
@@ -2269,9 +2335,9 @@ Chapter 6.
 \openout2 = `ch-proving.aux'.
 
  (tex/ch-proving.tex
-Chapter 7.
+Chapter 12.
 
-LaTeX Warning: Reference `proposition:inductive-invariant' on page 17 undefined
+LaTeX Warning: Reference `proposition:inductive-invariant' on page 24 undefined
  on input line 17.
 
 (tex/chap-proving/sec-unwinding.tex
@@ -2281,13 +2347,13 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 12.
- [17
+ [24
 
 
 
-] [18] [19] [20] [21])
-(tex/chap-proving/sec-under_approx.tex [22] [23])
-(tex/chap-proving/sec-computing_summary.tex [24] [25]
+] [25] [26] [27] [28])
+(tex/chap-proving/sec-under_approx.tex [29] [30])
+(tex/chap-proving/sec-computing_summary.tex [31] [32]
 \myBox1=\box81
 \myScoreStart1=\dimen273
 \myCenter1=\dimen274
@@ -2296,8 +2362,12 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 \myScoreStart2=\dimen276
 \myCenter2=\dimen277
 \myScoreEnd2=\dimen278
-)
-(tex/chap-proving/sec-checking_summary.tex [26]
+
+Overfull \hbox (1.45007pt too wide) in paragraph at lines 209--209
+ [][] 
+ []
+
+) (tex/chap-proving/sec-checking_summary.tex [33]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 76.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -2324,17 +2394,17 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 8.0pt on input line 76.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 6.1pt on input line 76.
- [27])
-(tex/chap-proving/sec-correctness.tex [28]
+ [34])
+(tex/chap-proving/sec-correctness.tex [35]
 \myBox3=\box83
 \myScoreStart3=\dimen279
 \myCenter3=\dimen280
 \myScoreEnd3=\dimen281
-)) [29]
+)) [36]
 \openout2 = `tex/ch-experiments.aux'.
 
  (tex/ch-experiments.tex
-Chapter 8.
+Chapter 13.
 
 Overfull \hbox (8.08667pt too wide) in paragraph at lines 60--72
 \T1/ntxtlf/m/n/12 A pro-to-type of our ap-proach, \T1/ntxtlf/m/sc/12 CPArec\T1/
@@ -2347,7 +2417,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [30
+) [37
 
 
 
@@ -2369,42 +2439,43 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 107.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 107.
- [31]
+ [38]
 Overfull \hbox (26.79648pt too wide) in paragraph at lines 200--235
  [] 
  []
 
-[32] [33]) [34] [35]
+[39] [40]) [41] [42]
 \openout2 = `tex/ch-conclusion.aux'.
 
  (tex/ch-conclusion.tex
-Chapter 9.
-[36
+Chapter 14.
+[43
 
 
 
-]) [37] [38] [39
+]) [44] [45] [46
 
 
 
-] [40]
-Overfull \hbox (0.65222pt too wide) in paragraph at lines 97--97
+] [47]
+Overfull \hbox (0.65222pt too wide) in paragraph at lines 102--102
 []\T1/ntxtlf/m/n/12 (2015). C In-ter-me-di-ate Lan-guage, [On-line]. Avail-able
 : []$\T1/ntxtt/m/n/12 http : / / kerneis . github .$
  []
 
-[41]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 100.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
+[48] [49]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
 (tex/abstractEN.aux) (tex/ch-introduction.aux) (tex/ch-related.aux)
-(tex/ch-preliminaries.aux) (tex/ch-overview.aux) (tex/ch-learning.aux)
-(tex/ch-error.aux) (ch-proving.aux) (tex/ch-experiments.aux)
-(tex/ch-conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
+(tex/ch-preliminaries.aux) (tex/ch-overview.aux) (tex/ch-pac.aux)
+(tex/ch-equivalence.aux) (tex/ch-membership.aux) (tex/ch-error.aux)
+(tex/ch-learning.aux) (tex/ch-procedure_calls.aux) (tex/ch-sampling.aux)
+(ch-proving.aux) (tex/ch-experiments.aux) (tex/ch-conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 37A8221AB63A90FE919755F76E442416;1638.
+(rerunfilecheck)             Checksum: DE52DE5D2BE004CB0B00C237F6D9336F;2066.
 
 
 LaTeX Warning: There were undefined references.
@@ -2418,13 +2489,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35108 strings out of 493634
- 627065 string characters out of 3141301
- 997623 words of memory out of 3000000
- 37327 multiletter control sequences out of 15000+200000
- 219954 words of font info for 340 fonts, out of 3000000 for 9000
+ 35324 strings out of 493634
+ 630357 string characters out of 3141301
+ 998658 words of memory out of 3000000
+ 37476 multiletter control sequences out of 15000+200000
+ 220671 words of font info for 342 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,19n,101p,1409b,20155s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,95p,1409b,20397s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/ec.enc}
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C:/Program Files (
@@ -2497,19 +2568,20 @@ fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
 type1/public/newtx/rntxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
 blic/newtx/rntxmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tx
 fonts/rtxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/r
-txr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/newtx/txex-bar.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txmia.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/txfonts/txsya.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
-w/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on document.pdf (49 pages, 671650 bytes).
+txr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xbtt.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/newtx/txex-bar.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/txfonts/txmia.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/txfonts/txsya.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/t
+xfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8
+a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on document.pdf (57 pages, 698221 bytes).
 PDF statistics:
- 983 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 500000)
- 473 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1077 PDF objects out of 1200 (max. 8388607)
+ 182 named destinations out of 1000 (max. 500000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

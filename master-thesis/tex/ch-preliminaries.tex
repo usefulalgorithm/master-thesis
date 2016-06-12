@@ -43,13 +43,45 @@ where
 	\end{array}
 \end{equation*} 
 
-For a path $\pi$, \textsf{decision}($\pi$) is the \emph{decision vector} of $\pi$. Consequently, we can define \emph{decision vectors} of a set of paths $\Pi$ as $\mathsf{decision}(\Pi) = \{\mathsf{decision}(\pi) | \pi \in \Pi\}$.
+For a path $\pi$, $\DEC(\pi)$ is the \emph{decision vector} of $\pi$. Consequently, we can define \emph{decision vectors} of a set of paths $\Pi$ as $\DEC(\Pi) = \{\DEC(\pi) | \pi \in \Pi\}$.
 
-\section{Two Classes of Automata}
+\section{Two Classes of Automata}\label{sec:automata}
 
 A \emph{finite automaton} (with $\lambda$-moves) $A$ is a tuple $A = (\Sigma, Q, q_i, \Delta, F)$ consisting of a finite \emph{alphabet} $\Sigma$, a finite set of \emph{states}, an \emph{initial state} $q_i \in Q$, a \emph{transition relation} $\Delta \subseteq Q \times (\Sigma \cup \{\lambda\}) \times Q$, and a set of \emph{accepting states} $F \subseteq Q$. A transition $(q, \lambda, q') \in \Delta$ is a \emph{$\lambda$-transition}. A word $w$ over $\Delta$ is \emph{accepted} by $A$ if there are states $q_0, \dots, q_m \in Q$ and symbols $a_1, \dots, a_m \in (\Sigma \cup \{\lambda\})$, such that $w = a_1a_2 \dots a_m$, there is a transition $(q_j, a_{j+1}, q_{j+1}) \in \Delta$ for every $j \in [0,m)$, $q_0 = q_i$, and $q_m \in F$. The \emph{language} of $A$ is defined as $L(A) = \{w|w \text{ is accepted by } A\} $. A language $R$ is regular if $R = L(A)$ for some finite automaton $A$. The finite automaton $A$ is \emph{detereministic} if its transition relation is a function from $Q \times \Sigma$ to $Q$. For any finite automaton A, there exists a deterministic finite automaton (DFA) $B$ such that $L(A) = L(B)$. 
 
 A \emph{pushdown automaton} (PDA) is a tuple $P = (\Sigma, Q, \Gamma, q_i, \Delta, F)$ consisting of a finite \emph{input alphabet} $\Sigma$, a finite set of \emph{states} $Q$, a finite \emph{stack alphabet} $\Gamma$, an \emph{initial state} $q_i \in Q$, a set of \emph{finite states} $F \subseteq Q$, and \emph{transition relation} $\Delta \subseteq Q \times (\Sigma \cup \{\lambda\}) \times (\Gamma \cup \{\lambda\}) \times (\Gamma \cup \{\lambda\}) \times Q$. We use $(q, [a;b/c], q')$ to denote the transition $(q, a, b, c, q')$, and we simplify $(q, [a;\lambda/\lambda], q')$ to $(q, a, q')$. A \emph{configuration} of $P$ is a tuple $(q,\gamma) \in Q \times \Gamma^*$. A word $w$ over $\Sigma$ is \emph{accepted} by $P$ if there is a sequence of configurations $(q_0, \gamma_0), \dots, (q_m, \gamma_m) \in Q \times \Sigma^*$ and a sequence of symbols $a_1, \dots, a_m \in (\Sigma \cup \{\lambda\})$, such that $w=a_1a_2\dots a_m, q_0 = q_i, \gamma_0 = \epsilon, q_m \in F$, and for every $j \in [0,m)$ there are some $b_j, b_{j+1} \in (\Gamma \cup \{\lambda\})$ and $\gamma'_j, \gamma'_{j+1} \in \Gamma^*$ such that $\gamma_j = b_j\gamma'_j, \gamma_{j+1} = b_{j+1}\gamma'_{j+1}$, and there is $(q_j, [a_{j+1};b_j/b_{j+1}], q_{j+1}) \in \Delta$. The language of $P$ is defined as $L(P) = \{w | w \text{ is accepted by } P\}$.
+
+\section{Concolic Testing}\label{sec:concolic_testing}
+
+\emph{Concolic testing} is a testing approach that explores paths in the CFG of a program while searching for bugs. The concolic tester begins its task by generating a decision vector by randomly picking the program's input values. Then, the tester finds the next decision vector by negating some decision made in the chosen decision vector, thus obtaining a new decision vector. The program then executes along the corresponding new path. This testing approach gives paths with rare paths a much greater chance to be explored. 
+
+Below is an example to show the main distinction between classical random testing techniques and concolic testing. Consider the following program and its corresponding CFG (figure \ref{figure:concolic_testing}): 
+\begin{lstlisting}[language=C]
+void func(int x, int y){
+   if (x == 2147483647) { 
+      if (y >= x) { assert(0); /* error */ }
+   }
+}
+\end{lstlisting}
+
+\begin{figure}[h]
+	\centering
+	\begin{tikzpicture}[scale=0.7,->, auto, node distance=2cm, thick, node/.style={circle, draw, minimum width=0.8cm, inner sep=0pt},  accepting/.style={double, circle, draw, minimum width=0.8cm, inner sep=0pt}]
+		\node[node] (0) at (0,0) {if};
+		\node[node] (1) at (1,-2.5) {if};
+		\node[node] (2) at (-1,-2.5) {};
+		\node[node] (3) at (0,-5) {};
+		\node[accepting] (4) at (2,-5) {};
+		\path
+		(0) edge node [right] {\textsf{x = 2147483647}} (1)
+		edge node [left] {\textsf{x $\neq$ 2147483647}} (2)
+		(1) edge node [left] {\textsf{y $<$ x}} (3)
+		edge node [right] {\textsf{y $\geq$ x}} (4);	
+	\end{tikzpicture}
+	\caption{CFG of $\fun{func}$}
+	\label{figure:concolic_testing}
+\end{figure}
+Random testing techniques would inject random values into $x$ and $y$. Since $x$ and $y$ are 32-bit integers, they can both take value in the range $[-(2^{31}), 2^{31}-1]$. However, only one combination in the $2^{128}$ possible ones, $x = 2147483647 \text{ and } y = 2147483647$, can reach the \texttt{assert(0);} in the function \texttt{func}. Concolic testing, on the contrary, only needs three tests to reach the error: since the concolic tester traverses the paths in the CFG, which in our case has three paths, it's clear that the concolic tester can reproduce the error within three tests. 
 
 \begin{comment}
 

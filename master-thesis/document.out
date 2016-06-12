@@ -6,21 +6,27 @@
 \BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 6
 \BOOKMARK [1][-]{section.3.1}{Program Model}{chapter.3}% 7
 \BOOKMARK [1][-]{section.3.2}{Two Classes of Automata}{chapter.3}% 8
-\BOOKMARK [0][-]{chapter.4}{Overview}{}% 9
-\BOOKMARK [0][-]{chapter.5}{PAC Automata Learning}{}% 10
-\BOOKMARK [0][-]{chapter.6}{Error Decision Vector}{}% 11
-\BOOKMARK [0][-]{chapter.7}{Proving via Transformation}{}% 12
-\BOOKMARK [1][-]{section.7.1}{Unwinding}{chapter.7}% 13
-\BOOKMARK [2][-]{subsection.7.1.1}{Function Inlining Method}{section.7.1}% 14
-\BOOKMARK [2][-]{subsection.7.1.2}{Function Duplicating Method}{section.7.1}% 15
-\BOOKMARK [1][-]{section.7.2}{Under-approximation}{chapter.7}% 16
-\BOOKMARK [2][-]{subsection.7.2.1}{Approximating Functions}{section.7.2}% 17
-\BOOKMARK [2][-]{subsection.7.2.2}{Approximating Programs from Function Inlining Method}{section.7.2}% 18
-\BOOKMARK [2][-]{subsection.7.2.3}{Approximating Programs from Function Duplicating Method}{section.7.2}% 19
-\BOOKMARK [1][-]{section.7.3}{Computing Summaries}{chapter.7}% 20
-\BOOKMARK [1][-]{section.7.4}{Checking Summaries}{chapter.7}% 21
-\BOOKMARK [1][-]{section.7.5}{Correctness}{chapter.7}% 22
-\BOOKMARK [0][-]{chapter.8}{Experiments}{}% 23
-\BOOKMARK [1][-]{section.8.1}{Implementation}{chapter.8}% 24
-\BOOKMARK [1][-]{section.8.2}{Experiments}{chapter.8}% 25
-\BOOKMARK [0][-]{chapter.9}{Conclusion}{}% 26
+\BOOKMARK [1][-]{section.3.3}{Concolic Testing}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{Overview}{}% 10
+\BOOKMARK [0][-]{chapter.5}{PAC Automata Learning}{}% 11
+\BOOKMARK [0][-]{chapter.6}{Resolving Equivalence Queries By Sampling}{}% 12
+\BOOKMARK [0][-]{chapter.7}{Resolving Membership Queries}{}% 13
+\BOOKMARK [0][-]{chapter.8}{Error Decision Vectors}{}% 14
+\BOOKMARK [0][-]{chapter.9}{The Learning-based Procedure}{}% 15
+\BOOKMARK [0][-]{chapter.10}{Handling Procedure Calls}{}% 16
+\BOOKMARK [0][-]{chapter.11}{The Sampling-based Procedure}{}% 17
+\BOOKMARK [0][-]{chapter.12}{Proving via Transformation}{}% 18
+\BOOKMARK [1][-]{section.12.1}{Unwinding}{chapter.12}% 19
+\BOOKMARK [2][-]{subsection.12.1.1}{Function Inlining Method}{section.12.1}% 20
+\BOOKMARK [2][-]{subsection.12.1.2}{Function Duplicating Method}{section.12.1}% 21
+\BOOKMARK [1][-]{section.12.2}{Under-approximation}{chapter.12}% 22
+\BOOKMARK [2][-]{subsection.12.2.1}{Approximating Functions}{section.12.2}% 23
+\BOOKMARK [2][-]{subsection.12.2.2}{Approximating Programs from Function Inlining Method}{section.12.2}% 24
+\BOOKMARK [2][-]{subsection.12.2.3}{Approximating Programs from Function Duplicating Method}{section.12.2}% 25
+\BOOKMARK [1][-]{section.12.3}{Computing Summaries}{chapter.12}% 26
+\BOOKMARK [1][-]{section.12.4}{Checking Summaries}{chapter.12}% 27
+\BOOKMARK [1][-]{section.12.5}{Correctness}{chapter.12}% 28
+\BOOKMARK [0][-]{chapter.13}{Experiments}{}% 29
+\BOOKMARK [1][-]{section.13.1}{Implementation}{chapter.13}% 30
+\BOOKMARK [1][-]{section.13.2}{Experiments}{chapter.13}% 31
+\BOOKMARK [0][-]{chapter.14}{Conclusion}{}% 32
