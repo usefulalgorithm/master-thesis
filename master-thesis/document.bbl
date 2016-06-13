@@ -684,6 +684,95 @@
   \field{year}{1987}
 \endentry
 
+\entry{Angluin88}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Angluin}{A.}%
+     {Dana}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AD1}
+  \strng{fullhash}{AD1}
+  \field{number}{4}
+  \field{pages}{319\bibrangedash 342}
+  \field{title}{Queries and concept learning}
+  \field{volume}{2}
+  \field{journaltitle}{Machine Learning}
+  \field{month}{04}
+  \field{year}{1988}
+\endentry
+
+\entry{BolligHKL09}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Benedikt Bollig Peter~Habermeh}{B.~B. P.~H.}%
+     {Carsten~Kern}{C.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leucker}{L.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BBPHCKLM1}
+  \strng{fullhash}{BBPHCKLM1}
+  \field{booktitle}{Proc. of {IJCAI}'09}
+  \field{pages}{1004\bibrangedash 1009}
+  \field{title}{Angluin-style learning of NFA}
+  \field{year}{2009}
+\endentry
+
+\entry{RivestS93}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Rivest}{R.}%
+     {Ronald~L.}{R.~L.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schapire}{S.}%
+     {Robert~E.}{R.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RRLSRE1}
+  \strng{fullhash}{RRLSRE1}
+  \field{number}{2}
+  \field{pages}{299\bibrangedash 347}
+  \field{title}{Inference of finite automata using homing sequences}
+  \field{volume}{103}
+  \field{journaltitle}{Information and Computation}
+  \field{month}{04}
+  \field{year}{1993}
+\endentry
+
+\entry{KearnsV94}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kearns}{K.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vazirani}{V.}%
+     {Umesh~Virkumar}{U.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {MIT Press}%
+  }
+  \strng{namehash}{KMJVUV1}
+  \strng{fullhash}{KMJVUV1}
+  \field{title}{An Introduction to Computational Learning Theory}
+  \list{location}{1}{%
+    {Cambridge, MA, USA}%
+  }
+  \field{year}{1994}
+\endentry
+
 \entry{NeculaMRW02}{inproceedings}{}
   \name{author}{4}{}{%
     {{}%

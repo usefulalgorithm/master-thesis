@@ -80,6 +80,8 @@ When the automata learning algorithm infer a candidate finite automaton $C$, we 
 \todo[inline]{Sampling-based procedure... done by me... probably not very well written?}
 In addition to the learning-based procedure, we propose a sampling-based procedure that provides the same statistical guarantees to a program, while excluding the overhead from constructing a candidate automaton in the learning-based procedure. Although the learning-based procedure can synthesize a program model that can be reused for different analyses, it comes with additional cost for model synthesis. The idea behind the sampling-based procedure is also based on PAC learning, but since no effort is spent on constructing a candidate automaton, the statistical guarantees provided by the sampling-based procedure can be much tighter than the learning-based procedure when given the same amount of computational resources. More descriptions on the sampling-based procedure is in \ref{ch:sampling_proc}.
 
+\begin{comment}
+
 Let \method{BasicAnalyzer} denote a recursion-free inductive program analyzer,
 and let a program $\prog{P}=\{G^{\fun{main}}\}\cup\{G^{\fun{f}} : \fun{f}\mbox{ is a function}\}$
 consist of the CFGs of the $\fun{main}$ function and functions that may be
@@ -453,4 +455,5 @@ accurate than $\underline{G}^{\fun{main}}_k$.
   \caption{Unwinding McCarthy 91}
   \label{figure:unwind-mccarthy91}
 \end{figure}
+\end{comment}
 

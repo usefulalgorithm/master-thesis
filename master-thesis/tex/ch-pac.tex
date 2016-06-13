@@ -1,1 +1,14 @@
 \chapter{PAC Automata Learning}\label{ch:PAC}
+
+In this chapter, we will explain the PAC automata learning algorithm that we use to find an approximation to $\DEC(\Pi)$. Classical PAC automata learning algorithm cannot be used directly for the purpose of program verification (proving correctness of a program) -- the algorithm should be able to handle the case when bugs are present in the program. The classical PAC automata learning algorithm was obtained from modifying the requirement of exact automata learning algorithm \cite{Angluin88}. Our PAC automata learning algorithm does the modification in a similar fashion. We first describe the classical "exact" automata learning algorithm of regular languages, then describe how to modify it for our purpose, and finally explain how to relax the requirement of an exact automata learning algorithm to infer an approximation to $\DEC(\Pi)$. 
+
+\section{Exact Learning of Regular Languages}\label{sec:exact}
+
+Suppose $R$ is a \emph{target} regular language whose description is not directly accessible. \emph{Automata learning} algorithms \cite{Angluin87, BolligHKL09, RivestS93, KearnsV94} infer automatically a finite automaton $A_R$ that recognizes $R$. The setting of an online learning algorithm assumes a \emph{teacher} that has access to $R$ and can answer the following queries:
+\begin{itemize}
+	\item Membership query ($Mem(w)$): whether the word $w$ a member of $R$, i.e., $w \in R$. The teacher should reply either yes or no. 
+	\item Equivalence query ($Equ(C)$): whether the language of finite automaton $C$ equivalent to $R$, i.e., $L(C) = R$. The teacher should either reply yes, or report an counterexample to the equality (a word in the symmetric difference of $L(C)$ and $R$, $L(C) \oplus R$, that is).	
+\end{itemize}
+The learning algorithm will then construct a finite automaton $A_R$ such that $L(A_R) = R$ through interacting with the teacher. Such mechanism works iteratively: in each iteration, it presents membership queries ($Mem(w)$)to the teacher in order to get information about $R$. Using the results of the queries, it proceeds by constructing a candidate automaton $C$, and finally makes an equivalence query ($Equ(C)$). If $L(C) = R$, the algorithm terminates with $C$ being the resulting finite automaton $A_R$. Otherwise, the teacher returns a word $w$ distinguishing $L(C)$ from the target language $R$. The learning algorithm uses $w$ to update the information about $R$ before moving on to the next iteration. The mentioned learning algorithms are guaranteed to find a resulting finite automaton $A_R$ recognizing $R$ using queries polynomial to the number of states of the minimal DFA recognizing $R$. In the rest of the paper, we would denote "online automata learning" simply as "automata learning", since the automata learning algorithms in this paper are all online algorithms. 
+
+\section{Learning for Program Verification}\label{sec:learning_program_verify}
