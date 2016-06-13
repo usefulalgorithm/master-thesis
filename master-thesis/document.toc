@@ -26,44 +26,44 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Learning for Program Verification}{14}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Resolving Equivalence Queries By Sampling}{15}{chapter.6}
+\contentsline {chapter}{\numberline {6}Resolving Equivalence Queries By Sampling}{16}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Resolving Membership Queries}{16}{chapter.7}
+\contentsline {chapter}{\numberline {7}Resolving Membership Queries}{17}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Error Decision Vectors}{17}{chapter.8}
+\contentsline {chapter}{\numberline {8}Error Decision Vectors}{18}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}The Learning-based Procedure}{18}{chapter.9}
+\contentsline {chapter}{\numberline {9}The Learning-based Procedure}{19}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Handling Procedure Calls}{19}{chapter.10}
+\contentsline {chapter}{\numberline {10}Handling Procedure Calls}{20}{chapter.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}The Sampling-based Procedure}{20}{chapter.11}
+\contentsline {chapter}{\numberline {11}The Sampling-based Procedure}{21}{chapter.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Proving via Transformation}{21}{chapter.12}
+\contentsline {chapter}{\numberline {12}Proving via Transformation}{22}{chapter.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}Unwinding}{21}{section.12.1}
+\contentsline {section}{\numberline {12.1}Unwinding}{22}{section.12.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.1}Function Inlining Method}{22}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.1}Function Inlining Method}{23}{subsection.12.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.2}Function Duplicating Method}{23}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.2}Function Duplicating Method}{24}{subsection.12.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}Under-approximation}{26}{section.12.2}
+\contentsline {section}{\numberline {12.2}Under-approximation}{27}{section.12.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.1}Approximating Functions}{26}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {12.2.1}Approximating Functions}{27}{subsection.12.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.2}Approximating Programs from Function Inlining Method}{27}{subsection.12.2.2}
+\contentsline {subsection}{\numberline {12.2.2}Approximating Programs from Function Inlining Method}{28}{subsection.12.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.3}Approximating Programs from Function Duplicating Method}{27}{subsection.12.2.3}
+\contentsline {subsection}{\numberline {12.2.3}Approximating Programs from Function Duplicating Method}{28}{subsection.12.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.3}Computing Summaries}{28}{section.12.3}
+\contentsline {section}{\numberline {12.3}Computing Summaries}{29}{section.12.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.4}Checking Summaries}{30}{section.12.4}
+\contentsline {section}{\numberline {12.4}Checking Summaries}{31}{section.12.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.5}Correctness}{32}{section.12.5}
+\contentsline {section}{\numberline {12.5}Correctness}{33}{section.12.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Experiments}{34}{chapter.13}
+\contentsline {chapter}{\numberline {13}Experiments}{35}{chapter.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.1}Implementation}{34}{section.13.1}
+\contentsline {section}{\numberline {13.1}Implementation}{35}{section.13.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.2}Experiments}{35}{section.13.2}
+\contentsline {section}{\numberline {13.2}Experiments}{36}{section.13.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}Conclusion}{40}{chapter.14}
+\contentsline {chapter}{\numberline {14}Conclusion}{41}{chapter.14}

@@ -773,6 +773,69 @@
   \field{year}{1994}
 \endentry
 
+\entry{CobleighGP03}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Cobleigh}{C.}%
+     {Jamieson~M.}{J.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Giannakopoulou}{G.}%
+     {Dimitra}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Pasareanu}{P.}%
+     {Corina~S.}{C.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CJMGDPCS1}
+  \strng{fullhash}{CJMGDPCS1}
+  \field{booktitle}{Proc. of {TACAS}'03}
+  \field{pages}{331\bibrangedash 346}
+  \field{title}{Learning assumptions for compositional verification}
+  \field{year}{2003}
+\endentry
+
+\entry{ChenFCTW09}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Chen}{C.}%
+     {Yu-Fang}{Y.-F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Farzen}{F.}%
+     {Azadeh}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Clarke}{C.}%
+     {Edmund~M.}{E.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsay}{T.}%
+     {Yih-Kuen}{Y.-K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Bow-Yaw}{B.-Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CYFFACEM+1}
+  \strng{fullhash}{CYFFACEMTYKWBY1}
+  \field{booktitle}{Proc. of {TACAS}'09}
+  \field{pages}{31\bibrangedash 45}
+  \field{title}{Learning minimal seperating DFA's for compositional
+  verification}
+  \field{year}{2009}
+\endentry
+
 \entry{NeculaMRW02}{inproceedings}{}
   \name{author}{4}{}{%
     {{}%
