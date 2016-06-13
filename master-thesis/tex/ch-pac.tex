@@ -26,3 +26,21 @@ Given a teacher that correctly answers membership queries and equivalence querie
 \end{lemma}
 
 Note that when the program is bug-free, the behavior of the modified automata learning algorithm is identical to the classical automata learning algorithm, and therefore is still an exact automata learning algorithm. In the next section, we will go on to explain how to relax the requirements of the exact automata learning algorithm in order to retrieve a PAC automata learning algorithm that is suitable for program verification in reality. 
+
+\section{Probably Approximately Correct Learning}\label{sec:pac_learning}
+
+The techniques for learning automata in Section \ref{sec:learning_program_verify} assume a teacher that can answer equivalence queries. This assumption is, however, invalid in our procedure, since checking $\DEC(\Pi) = L(C)$ can be undecidable. Angluin showed in \cite{Angluin88} that if we substitute equivalence queries with sampling, we can still make statistical claims about the difference of the inferred set and the target set. 
+
+Assume we are given the following: a probability distribution $D$ over the elements in a universe $\mathcal{U}$, and a hypothesis in the form
+\begin{equation}\label{eq:pac_hypothesis}
+	Prob_{w \in \mathcal{U}|D} [\neg \varphi (w)] \leq \epsilon
+\end{equation}
+In the hypothesis, the term $Prob_{w \in \mathcal{U}|D} [\neg \varphi (w)]$ denotes the probability that the formula $\varphi(w)$ is invalid for word $w$, which is chosen from $\mathcal{U}$ according to distribution $D$. We call $\epsilon$ the \emph{error} parameter and use the term \emph{confidence} to denote the least probability that the hypothesis \ref{eq:pac_hypothesis} is correct. We say that $\varphi(w)$ is \emph{$PAC(\epsilon, \delta)-valid$} if with confidence $\delta$, $Prob_{w \in \mathcal{U}|D} [\neg \varphi (w)] \leq \epsilon$. 
+
+In the scenario of automata learning, the considered universe is $\Sigma^\ast$, and the target regular language is $R \subseteq \Sigma^\ast$. The task of an equivalence query $Equ(w)$ is changed from checking \emph{exact} equivalence (which we can express as checking that $\forall w \in \Sigma^\ast : w \notin R \oplus L(C)$) to checking \emph{approximate} equivalence, i.e., checking whether the formula $\varphi(w) = w \notin R \oplus L(C)$ is $PAC(\epsilon, \delta)$-valid. In other words, we check whether $Prob_{w \in \Sigma^\ast|D} [w \in R \oplus] \leq \epsilon$ with confidence $\delta$. For a fixed $R$ and a candidate automaton $C$, we call $C$ \emph{$\PAC$} if $w \notin R \oplus L(C)$ is $PAC(\epsilon, \delta)$-valid.
+
+The teacher checks the $\PAC$ness of $C$ by picking $r$ samples according to $D$, then tests the samples to see if none of them is in $R \oplus L(C)$. A formula to determine $r$ in the equivalence query for each iteration of the learning algorithm is given by Dana Angluin in \cite{Angluin87}: for the $i$-th equivalence query of the learning algorithm, the number of samples $q_i$ needed in order to conclude that $C$ is $\PAC$ is
+\begin{equation}
+	q_i = \lceil \frac{1}{\epsilon} (\text{ln} \frac{1}{1-\delta} + i \text{ln}2) \rceil
+\end{equation}
+Since the infered set $C$ is guaranteed to be $\PAC$, this approach is termed \emph{probably approximately correct} (PAC) learning \cite{Valiant84}.

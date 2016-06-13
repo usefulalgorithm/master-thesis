@@ -704,10 +704,20 @@
 \endentry
 
 \entry{BolligHKL09}{inproceedings}{}
-  \name{author}{2}{}{%
+  \name{author}{4}{}{%
     {{}%
-     {Benedikt Bollig Peter~Habermeh}{B.~B. P.~H.}%
-     {Carsten~Kern}{C.~K.}%
+     {Bollig}{B.}%
+     {Benedikt}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Habermeh}{H.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kern}{K.}%
+     {Carsten}{C.}%
      {}{}%
      {}{}}%
     {{}%
@@ -716,11 +726,11 @@
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{BBPHCKLM1}
-  \strng{fullhash}{BBPHCKLM1}
+  \strng{namehash}{BBHPKC+1}
+  \strng{fullhash}{BBHPKCLM1}
   \field{booktitle}{Proc. of {IJCAI}'09}
   \field{pages}{1004\bibrangedash 1009}
-  \field{title}{Angluin-style learning of NFA}
+  \field{title}{Angluin-style learning of {NFA}}
   \field{year}{2009}
 \endentry
 
@@ -803,7 +813,7 @@
   \name{author}{5}{}{%
     {{}%
      {Chen}{C.}%
-     {Yu-Fang}{Y.-F.}%
+     {Yu{-}Fang}{Y.}%
      {}{}%
      {}{}}%
     {{}%
@@ -818,22 +828,41 @@
      {}{}}%
     {{}%
      {Tsay}{T.}%
-     {Yih-Kuen}{Y.-K.}%
+     {Yih{-}Kuen}{Y.}%
      {}{}%
      {}{}}%
     {{}%
      {Wang}{W.}%
-     {Bow-Yaw}{B.-Y.}%
+     {Bow{-}Yaw}{B.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{CYFFACEM+1}
-  \strng{fullhash}{CYFFACEMTYKWBY1}
+  \strng{namehash}{CYFACEM+1}
+  \strng{fullhash}{CYFACEMTYWB1}
   \field{booktitle}{Proc. of {TACAS}'09}
   \field{pages}{31\bibrangedash 45}
-  \field{title}{Learning minimal seperating DFA's for compositional
+  \field{title}{Learning minimal seperating {DFA}'s for compositional
   verification}
   \field{year}{2009}
+\endentry
+
+\entry{Valiant84}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Valiant}{V.}%
+     {Leslie~G.}{L.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VLG1}
+  \strng{fullhash}{VLG1}
+  \field{number}{11}
+  \field{pages}{1134\bibrangedash 1142}
+  \field{title}{A theory of the learnable}
+  \field{volume}{27}
+  \field{journaltitle}{Communications of the ACM}
+  \field{month}{11}
+  \field{year}{1984}
 \endentry
 
 \entry{NeculaMRW02}{inproceedings}{}
