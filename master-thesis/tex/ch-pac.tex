@@ -21,7 +21,7 @@ Under the context of program verification, it may be the case that $\DEC(\Pi) \c
 \end{enumerate}
 
 Given a teacher that correctly answers membership queries and equivalence queries about $\DEC(\Pi)$, the modified automata learning algorithm has the following properties.
-\begin{lemma}
+\begin{lemma}\label{lem:pac_terminate}
 	Assume $\DEC(\Pi)$ is a regular set. The modified automata learning algorithm eventually finds a counterexample $c \in L(B) \cap \DEC(\Pi)$ when $L(B) \cap \DEC(\Pi) \neq \emptyset$. It eventually finds a finite automaton recognizing $\DEC(\Pi)$ when $L(B) \cap \DEC(\Pi) = \emptyset$.
 \end{lemma}
 
@@ -40,7 +40,7 @@ In the hypothesis, the term $Prob_{w \in \mathcal{U}|D} [\neg \varphi (w)]$ deno
 In the scenario of automata learning, the considered universe is $\Sigma^\ast$, and the target regular language is $R \subseteq \Sigma^\ast$. The task of an equivalence query $Equ(w)$ is changed from checking \emph{exact} equivalence (which we can express as checking that $\forall w \in \Sigma^\ast : w \notin R \oplus L(C)$) to checking \emph{approximate} equivalence, i.e., checking whether the formula $\varphi(w) = w \notin R \oplus L(C)$ is $PAC(\epsilon, \delta)$-valid. In other words, we check whether $Prob_{w \in \Sigma^\ast|D} [w \in R \oplus] \leq \epsilon$ with confidence $\delta$. For a fixed $R$ and a candidate automaton $C$, we call $C$ \emph{$\PAC$} if $w \notin R \oplus L(C)$ is $PAC(\epsilon, \delta)$-valid.
 
 The teacher checks the $\PAC$ness of $C$ by picking $r$ samples according to $D$, then tests the samples to see if none of them is in $R \oplus L(C)$. A formula to determine $r$ in the equivalence query for each iteration of the learning algorithm is given by Dana Angluin in \cite{Angluin87}: for the $i$-th equivalence query of the learning algorithm, the number of samples $q_i$ needed in order to conclude that $C$ is $\PAC$ is
-\begin{equation}
+\begin{equation}\label{eq:pac_qi}
 	q_i = \lceil \frac{1}{\epsilon} (\text{ln} \frac{1}{1-\delta} + i \text{ln}2) \rceil
 \end{equation}
 Since the infered set $C$ is guaranteed to be $\PAC$, this approach is termed \emph{probably approximately correct} (PAC) learning \cite{Valiant84}.

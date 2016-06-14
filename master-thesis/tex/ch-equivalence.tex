@@ -14,3 +14,31 @@ The issue of random input sampling is that it suffers from the fact that the cov
 \section{Applying Concolic Tester}\label{sec:apply_concolic}
 
 As stated in Section \ref{sec:concolic_testing}, concolic testing is a testing technique that explores paths in a program's CFG. In addition to the usual usage of concolic testers, we adopt the concept of batched samples. A \emph{batched sample} is defined as a set of decision vectors of the size $k$, where $k$ is a given parameter, obtained by a concolic tester from exploring $k$ paths using its search strategy. We denote $D_k$ the distribution over elements of $(\Sigma^\ast)^k$ obtained in this method. Our procedure restarts the concolic tester after taking a batched sample -- this ensures that the probability of taking each batched sample remains the same during the procedure (we assume that the concolic tester does not keep state information between the restarts), thus guaranteeing the distribution IID. Therefore, the distribution $D_k$ meets condition \ref{item:sample_cond_2} defined in the previous section. The principal functioning of concolic testers guarantees that condition \ref{item:sample_cond_1} is also met. 
+
+\section{Generalized Stochastic Equivalence}\label{sec:stochastic_eq}
+
+We will then proceed to show that our sampling mechanism with batched samples preserves the property required by the $\PAC$ness guarantee of the learning algorithm described in \ref{sec:pac_learning}.
+
+Recall that for the set of feasible decsion vectors of a program $\DEC(\Pi)$, and a candidate automaton $C$ inferred by the learning algorithm using some distribution $D$ over $\Sigma^\ast$, if the teacher replies with "\textit{yes}" to an equivalence query $Equ(C)$, it guarantees with confidence $\delta$ that 
+\begin{equation}
+Prob_{w \in \Sigma^\ast|D}[w \in \DEC(\Pi) \oplus L(C)] \leq \epsilon
+\end{equation}
+Since our sampling technique uses batched samples within universe $\mathcal{U}_k = (\Sigma^\ast)^k$ with respect to the distribution $D_k$ instead of elements of $\Sigma^\ast$ and distribution $D$, we need to change the provided guarantee in our modification of the learning algorithm. If our algorithm replies with "\textit{yes}", then it guarantees that
+\begin{equation}\label{eq:equ_pac}
+Prob_{S \in \mathcal{U}_k|D_k}[\exists w \in S | w \in \DEC(\Pi) \oplus L(C)] \leq \epsilon
+\end{equation}
+with confidence $\delta$. We hereafter use the term $\PAC$ to denote this form of the guarantee. 
+
+When an equivalence query $Equ(C)$ is presented to the teacher, it uses a concolic tester to obtain $q_i$ (given in Equation \ref{eq:pac_qi}) batches of samples. For each batched sample $S$, the teacher checks if there is a decision vector $w \in S$ such that $w \notin L(C)$. Note that by definition $w \in \DEC(\Pi)$. The teacher answers with "\textit{yes}" if no such $w$ exists, otherwise it checks whether $w$ is an error decision vector and either reports $w$ as a feasible error decision vector or returns $w$ to the learning algorithm to refine the next candidate automaton. 
+
+The following lemma shows that if we use $q_i$ batched samples for equivalence checking, we can achieve the modified $\PAC$ness guarantee from Equation \ref{eq:equ_pac}. 
+
+\begin{lemma}\label{lem:equ_C_pac}
+Let $\epsilon$ and $\delta$ be the error and the confidence parameters, and let $R$ be the target language. If in the $q_i$ batched samples, no decision vector $w$ is found such that $w \notin L(C)$, then it holds that $C$ is $\PAC$.
+\end{lemma}
+
+With the above lemma in mind, based on the fact that $L(C) \cap L(B) = \emptyset$ (Lemma \ref{lem:pac_terminate}) we obtain the following corollary.
+
+\begin{corollary}\label{cor:equ_prog_pac}
+Let $\epsilon$ and $\delta$ be the error and the confidence parameters, and let $R$ be the target language. If in the $q_i$ batched samples, no decision vector $w$ is found such that $w \notin L(C)$, then it holds that the program is $\PAC$.
+\end{corollary}
