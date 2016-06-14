@@ -53,7 +53,7 @@ A \emph{pushdown automaton} (PDA) is a tuple $P = (\Sigma, Q, \Gamma, q_i, \Delt
 
 \section{Concolic Testing}\label{sec:concolic_testing}
 
-\emph{Concolic testing} is a testing approach that explores paths in the CFG of a program while searching for bugs. The concolic tester begins its task by generating a decision vector by randomly picking the program's input values. Then, the tester finds the next decision vector by negating some decision made in the chosen decision vector, thus obtaining a new decision vector. The program then executes along the corresponding new path. This testing approach gives paths with rare paths a much greater chance to be explored. 
+\emph{Concolic testing} \cite{GodefroidKS05,SenMA05} is a testing approach that explores paths in the CFG of a program while searching for bugs. The concolic tester begins its task by generating a decision vector by randomly picking the program's input values. Then, the tester finds the next decision vector by negating some decision made in the chosen decision vector, thus obtaining a new decision vector. The selection of which decision should be negated depends on the used \emph{search strategy} of the tester. The program then executes along the corresponding new path. This testing approach gives paths with rare paths a much greater chance to be explored. 
 
 Below is an example to show the main distinction between classical random testing techniques and concolic testing. Consider the following program and its corresponding CFG (figure \ref{figure:concolic_testing}): 
 \begin{lstlisting}[language=C]

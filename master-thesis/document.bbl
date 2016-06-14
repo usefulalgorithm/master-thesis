@@ -865,6 +865,79 @@
   \field{year}{1984}
 \endentry
 
+\entry{GodefroidKS05}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Godefroid}{G.}%
+     {Patrice}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klarlund}{K.}%
+     {Nils}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sen}{S.}%
+     {Koushik}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GPKNSK1}
+  \strng{fullhash}{GPKNSK1}
+  \field{booktitle}{Proc. of {PLDI}'05}
+  \field{pages}{213\bibrangedash 223}
+  \field{title}{{DART}: directed automated random testing}
+  \field{year}{2005}
+\endentry
+
+\entry{SenMA05}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Sen}{S.}%
+     {Koushik}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marinov}{M.}%
+     {Darko}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Agha}{A.}%
+     {Gul}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SKMDAG1}
+  \strng{fullhash}{SKMDAG1}
+  \field{booktitle}{Proc. of {FSE}'05}
+  \field{pages}{263\bibrangedash 272}
+  \field{title}{{CUTE}: a concolic unit testing engine for {C}}
+  \field{year}{2005}
+\endentry
+
+\entry{BurnimS08}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Burnim}{B.}%
+     {Jacob}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sen}{S.}%
+     {Koushik}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BJSK1}
+  \strng{fullhash}{BJSK1}
+  \field{booktitle}{Proc. of {ASE}'08}
+  \field{pages}{443\bibrangedash 446}
+  \field{title}{Heuristics for scalable dynamic test generation}
+  \field{year}{2008}
+\endentry
+
 \entry{NeculaMRW02}{inproceedings}{}
   \name{author}{4}{}{%
     {{}%
