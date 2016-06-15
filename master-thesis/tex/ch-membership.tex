@@ -1,1 +1,11 @@
 \chapter{Resolving Membership Queries}\label{ch:mem}
+
+We describe how a membership query $Mem(d)$ in the algorithm as seen in Figure \ref{figure:overview} is answered by the teacher. Let $\Pi$ be the set of the feasible paths of a CFG $G$. When the learning algorithm presents a membership query $Mem(d)$, the teacher needs to check whether the decision vector $d$ is in the set of feasible decision vectors $\DEC(\Pi)$. To answer the query, the teacher first constructs a path $\pi = \langle v_0, f_1, v_1, f_2, v_2, \dots,  v_{m-1}, f_m, v_m \rangle$ in $G$ such that
+\begin{itemize}
+	\item there are exactly $|d|$ occurrences of branching nodes in the prefix $\langle v_0, f_1, v_1, f_2, v_2, \dots, \\  v_{m-1} \rangle$ of $\pi$,
+	\item if $v_k$ is the $j$-th branching node in $\pi$, then it holds that $\DEC(v_k, f_k+1) = d[j]$, and
+	\item $v_{m-1}$ is a branching node.
+\end{itemize}
+Recall that $\pi$ is a feasible path if and only if the formula $\varphi = \bigwedge_{j=1}^m f_j^{\langle j \rangle}$ is satisfiable. With this in mind, the teacher can easily construct the formula $\varphi$ from the path $\pi$ and check its satisfiability using an off-the-shelf constraint solver. 
+
+Another way for the teacher to check if a path is feasible is by translating the path to a sequence of program statements (with conditions replaced by assertions on the values of the conditions), and asking a symbolic executor or software model checker whether the final line of the constructed program is reachable. This method is easier to implement, but normally suffers from some performance penalty. 

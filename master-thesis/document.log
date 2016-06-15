@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  14 JUN 2016 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  15 JUN 2016 14:24
 entering extended mode
 **./document.tex
 (document.tex
@@ -2268,6 +2268,14 @@ Chapter 6.
 
  (tex/ch-membership.tex
 Chapter 7.
+
+Overfull \hbox (4.17007pt too wide) in paragraph at lines 5--6
+[]\T1/ntxtlf/m/n/12 there are ex-actly $\OMS/ntxsy/m/n/12 j\OML/ntxmi/m/it/12 d
+\OMS/ntxsy/m/n/12 j$ \T1/ntxtlf/m/n/12 oc-cur-rences of branch-ing nodes in the
+ pre-fix $\OMS/ntxsy/m/n/12 h\OML/ntxmi/m/it/12 v[]; f[]; v[]; f[]; v[]; [] ; [
+] $
+ []
+
 ) [21
 
 
@@ -2610,9 +2618,9 @@ type1/public/txfonts/txsya.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/t
 xfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (59 pages, 705760 bytes).
+Output written on document.pdf (59 pages, 708061 bytes).
 PDF statistics:
- 1133 PDF objects out of 1200 (max. 8388607)
+ 1134 PDF objects out of 1200 (max. 8388607)
  202 named destinations out of 1000 (max. 500000)
  561 words of extra memory for PDF output out of 10000 (max. 10000000)
 
