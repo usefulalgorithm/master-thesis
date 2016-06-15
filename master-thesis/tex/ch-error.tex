@@ -1,1 +1,21 @@
 \chapter{Error Decision Vectors}\label{ch:error}
+
+Let $\mathcal{B}$ be the set of error paths in a CFG $G$. In this chapter, we demonstrate how to construct a finite automaton accepting the set of all error decision vectors $\DEC(\mathcal{B})$ of $G$. We will intersect this automaton with the automaton accepting	the set of feasible decision vectors in order to determine if the CFG contains a feasible error path. 
+
+\begin{definition}\label{def:err_error_automaton}
+	Let $G = (V_b \cup V_s, E, v_i, v_r, V_e, \mathcal{X}_{FP})$ be a CFG. We define the \emph{error trace automaton} for $G$ as the finite automaton $B = (\{0,1\}, V_b \cup V_s, v_i, \Delta_E, V_e)$, where $\Delta_E$ is defined as follows: 
+	\begin{itemize}
+		\item $(v, 0, v_0')  \in \Delta_E$ if $v \in V_b \setminus V_e, (v, f_0, v_0') \in E$ and $v_0'$ is the 0-successor of $v$;
+		\item $(v, 1, v_1')  \in \Delta_E$ if $v \in V_b \setminus V_e, (v, f_1, v_1') \in E$ and $v_1'$ is the 1-successor of $v$;
+		\item $(v, \lambda, v') \in \Delta_E$ if $v \in V_s \setminus V_e$; and
+		\item $(v, 0, v), (v, 1, v) \in \Delta_E$ if $v \in V_e$.
+	\end{itemize}
+\end{definition}
+
+Intuitively, $B$ contains a state for every node and a transition for every edge of $G$. It reads a symbol in each state for the branching nodes $V_b \setminus V_e$, and performs $\lambda$-transitions for the sequential nodes $V_s \setminus V_e$. For every error node in $V_e$, $B$ reads all remaining symbols and accepts the input word. It is straightforward to see that $B$ accepts exactly the set of decision vectors corresponding to the error paths in $G$. 
+
+\begin{lemma}\label{lem:err_error_automaton}
+	Let $G = (V, E, v_i, v_r, V_e, \mathcal{X}_{FP})$ be a CFG, and $\mathcal{B}$ the set of error paths in $G$. Let $B$ be the error trace automaton for $G$. It holds that $L(B) = \DEC(\mathcal{B})$. 
+\end{lemma}
+
+In Chapter \ref{ch:procedure_calls}, we describe an extension of our mechanisms to programs with procedure calls. Because representing the set of error decision vectors using a finite automaton is imprecise in this scenario, Chapter \ref{ch:procedure_calls} also discusses an extension that represents the set of error paths in a program with procedure calls using pushdown automaton.
