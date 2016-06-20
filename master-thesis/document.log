@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  20 JUN 2016 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  20 JUN 2016 12:48
 entering extended mode
 **./document.tex
 (document.tex
@@ -2296,7 +2296,11 @@ LaTeX Font Info:    Font shape `TS1/ntxtlf/m/it' will be
 
  (tex/ch-learning.tex
 Chapter 9.
+[24
 
+
+
+]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
 meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
@@ -2305,20 +2309,23 @@ File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
 \pgfarrowwidth=\dimen275
 \pgfarrowlinewidth=\dimen276
 )
-Overfull \hbox (56.94783pt too wide) in paragraph at lines 52--53
-[][] 
+Overfull \hbox (56.94781pt too wide) in paragraph at lines 55--56
+ [][] 
  []
 
-) [24
+[25]
+Overfull \hbox (1.39479pt too wide) in paragraph at lines 69--70
+[]\T1/ntxtlf/m/it/12 Suppose our learn-ing pro-ce-dure re-ports a pro-gram $\OM
+L/ntxmi/m/it/12 P$ \T1/ntxtlf/m/it/12 as $\OML/ntxmi/m/it/12 PAC\U/ntxmia/m/it/
+12 }\OML/ntxmi/m/it/12 ; \U/ntxmia/m/it/12 ~[]$\T1/ntxtlf/m/it/12 .
+ []
 
-
-
-] [25]
+) [26]
 \openout2 = `tex/ch-procedure_calls.aux'.
 
  (tex/ch-procedure_calls.tex
 Chapter 10.
-) [26
+) [27
 
 
 
@@ -2327,7 +2334,7 @@ Chapter 10.
 
  (tex/ch-sampling.tex
 Chapter 11.
-) [27
+) [28
 
 
 
@@ -2337,15 +2344,15 @@ Chapter 11.
  (tex/ch-proving.tex
 Chapter 12.
 
-LaTeX Warning: Reference `algorithm:overview' on page 28 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 29 undefined on input lin
 e 6.
 
 
-LaTeX Warning: Reference `algorithm:overview' on page 28 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 29 undefined on input lin
 e 11.
 
 
-LaTeX Warning: Reference `proposition:inductive-invariant' on page 28 undefined
+LaTeX Warning: Reference `proposition:inductive-invariant' on page 29 undefined
  on input line 17.
 
 (tex/chap-proving/sec-unwinding.tex
@@ -2355,7 +2362,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 12.
- [28
+ [29
 
 
 
@@ -2382,22 +2389,22 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 7.3pt on input line 34.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 5.5pt on input line 34.
- [29]
+ [30]
 
-LaTeX Warning: Reference `algorithm:overview' on page 30 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 31 undefined on input lin
 e 148.
 
 
-LaTeX Warning: Reference `algorithm:overview' on page 30 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 31 undefined on input lin
 e 167.
 
-[30]
+[31]
 
-LaTeX Warning: Reference `algorithm:overview' on page 31 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 32 undefined on input lin
 e 197.
 
-[31] [32]) (tex/chap-proving/sec-under_approx.tex [33] [34])
-(tex/chap-proving/sec-computing_summary.tex [35] [36]
+[32] [33]) (tex/chap-proving/sec-under_approx.tex [34] [35])
+(tex/chap-proving/sec-computing_summary.tex [36] [37]
 \myBox1=\box81
 \myScoreStart1=\dimen277
 \myCenter1=\dimen278
@@ -2411,7 +2418,7 @@ Overfull \hbox (1.45007pt too wide) in paragraph at lines 209--209
  [][] 
  []
 
-) (tex/chap-proving/sec-checking_summary.tex [37]
+) (tex/chap-proving/sec-checking_summary.tex [38]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 76.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -2438,18 +2445,18 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 8.0pt on input line 76.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 (Font)              scaled to size 6.1pt on input line 76.
- [38])
+ [39])
 (tex/chap-proving/sec-correctness.tex
 
-LaTeX Warning: Reference `algorithm:overview' on page 39 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 40 undefined on input lin
 e 6.
 
-[39]
+[40]
 \myBox3=\box83
 \myScoreStart3=\dimen283
 \myCenter3=\dimen284
 \myScoreEnd3=\dimen285
-)) [40]
+)) [41]
 \openout2 = `tex/ch-experiments.aux'.
 
  (tex/ch-experiments.tex
@@ -2466,7 +2473,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [41
+) [42
 
 
 
@@ -2490,34 +2497,34 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 107.
 
 
-LaTeX Warning: Reference `algorithm:overview' on page 42 undefined on input lin
+LaTeX Warning: Reference `algorithm:overview' on page 43 undefined on input lin
 e 125.
 
-[42]
+[43]
 Overfull \hbox (26.79648pt too wide) in paragraph at lines 200--235
  [] 
  []
 
-[43] [44]) [45] [46]
+[44] [45]) [46] [47]
 \openout2 = `tex/ch-conclusion.aux'.
 
  (tex/ch-conclusion.tex
 Chapter 14.
-[47
+[48
 
 
 
-]) [48] [49] [50
+]) [49] [50] [51
 
 
 
-] [51] [52]
+] [52] [53]
 Overfull \hbox (0.65222pt too wide) in paragraph at lines 102--102
 []\T1/ntxtlf/m/n/12 (2015). C In-ter-me-di-ate Lan-guage, [On-line]. Avail-able
 : []$\T1/ntxtt/m/n/12 http : / / kerneis . github .$
  []
 
-[53]
+[54]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
@@ -2543,13 +2550,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35572 strings out of 493634
- 637801 string characters out of 3141301
- 992700 words of memory out of 3000000
- 37694 multiletter control sequences out of 15000+200000
+ 35601 strings out of 493634
+ 638361 string characters out of 3141301
+ 991700 words of memory out of 3000000
+ 37720 multiletter control sequences out of 15000+200000
  221083 words of font info for 343 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,19n,95p,1409b,20400s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,19n,95p,1618b,20400s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/ec.enc}
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Program Files (
@@ -2633,9 +2640,9 @@ type1/public/txfonts/txsya.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
 ublic/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/t
 xfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8
 a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on document.pdf (61 pages, 720188 bytes).
+Output written on document.pdf (62 pages, 725653 bytes).
 PDF statistics:
- 1159 PDF objects out of 1200 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
+ 1168 PDF objects out of 1200 (max. 8388607)
+ 210 named destinations out of 1000 (max. 500000)
  561 words of extra memory for PDF output out of 10000 (max. 10000000)
 

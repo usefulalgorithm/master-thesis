@@ -2,54 +2,75 @@
 
 In this chapter, we will sum up our learning-based procedure. Let $G$ be the CFG of the target program, $k$ be the number of samples in one batched sample, $\epsilon$ be the error parameter, and $\delta$ be the confidence parameter. Our objective of this procedure is to either find a feasible error decision vector in $G$, or show that $G$ is $PAC$. In the latter case, the procedure will also construct a $\PAC$ regular representation of the set of feasible decision vectors of $G$. Let $\Pi$ be the set of feasible paths of $G$, $D_k$ be the distribution defined by our sampling mechanism (cf. Chapter \ref{ch:eq}), and $L(B)$ be the set of error decision vectors of $G$ (cf. Chapter \ref{ch:error}).
 
-Figure \ref{figure:learning} depicts a detailed flowchart of our learning-based procedure. 
+Figure \ref{figure:learning} depicts a detailed flowchart of our learning-based procedure. The green box and the blue components within it describe the learning algorithm and related sanity checks. To be more specific, we extend the online automata learning algorithm with two additional tests in order to check the target program's correctness. This was also described in Section \ref{sec:learning_program_verify}. In particular, when the learning algorithm presents a candidate automaton $C$, we first check whether a \emph{feasible} error decision vector $c$ is contained in $L(C)$. If such a feasible error decision vector exists, we report it to the user. Otherwise, in the case when $c \in L(C) \cap L(B)$ but is actually \emph{infeasible}, we return $c$ to the learning algorithm to further refine the candidate automaton. 
 
-\begin{figure}
-	\begin{tikzpicture}[node distance=2cm, auto,scale=0.7, every node/.style={scale=0.7}]
-		\usetikzlibrary{arrows.meta}
-		% Draw big boxes
-		\draw[align=center, rounded corners, fill=yellow!20] (0,6) rectangle (24,2.5) {};
-		\node[draw=none] at (12,5.7145) {\textbf{Mechanical Teacher}};
-		\draw[align=center, rounded corners, fill=green!20] (1,1.5) rectangle (19,-2) {};
-		\node[draw=none] at (10,-1.7145) {\textbf{PAC Automata Learning Algorithm (Chapter \ref{ch:PAC})}};
-		% Draw small boxes and diamonds
-		\node[draw, align=center, rounded corners, fill=blue!20, text width=3.5cm] (a1) at (3,4) {Build and check the path formula of $w$ (Chapter \ref{ch:mem})};
-		\node[draw, diamond, aspect=3, fill=blue!20, text width=3.3cm, inner sep=0pt, text badly centered] (a2) at (9,4) {$s \in L(B)$?};
-		\node[draw, diamond, aspect=3, fill=blue!20, text width=3.3cm, inner sep=0pt, text badly centered] (a3) at (15,4) {$\exists s \in S. s \notin L(C)$?};
-		\node[draw, align=center, rounded corners, fill=blue!20, text width=3.5cm] (a4) at (21,4) {Sample a set $S$ of decision vectors (Chapter \ref{ch:eq})};
-		\node[draw, align=center, rounded corners, fill=blue!20, text width=3.5cm](b1) at (4,0) {Build/Refine Model (Learning Algorithm)};
-		\node[draw, diamond, aspect=3, fill=blue!20, text width=4cm, inner sep=-2pt, text badly centered](b2) at (10,0) {$\exists c. c \in L(C) \cap L(B)$?};
-		\node[draw, diamond, aspect=3, fill=blue!20, text width=3.3cm, inner sep=0pt, text badly centered](b3) at (16,0) {$c \in \mathsf{decision}(\Pi)$?};
-		\node[draw, align=center, rounded corners, fill=red!20, text width=3.5cm] (e1) at (3.8,6.9) {$s$ is a feasible error decision vector};
-		\node[draw, align=center, rounded corners, fill=red!20, text width=3.5cm] (e2) at (22.3773,0) {$c$ is a feasible error decision vector};
-		\node[draw, align=center, rounded corners, fill=cyan!20, text width=3.5cm] (g1) at (18.6,6.9) {The system is $PAC(\epsilon, \delta)$-correct};
-		% Draw edges
-		\node at (4.211,2.0554) {yes/no};
-		\node at (1.8227,2.0221) {$Mem(w)$};
-		\draw [-{>[scale=2]}] (a2) -- (8.9991,1.8) -- (5.3215,1.8) -- (5.3223,0.8cm);
-		\draw [-{>[scale=2]}] (3.5,3.2) -- (3.5,0.8);
-		\draw [-{>[scale=2]}] (2.7115,0.8) -- (2.7115,3.2);
-		\node at (8.6111,2.9222) {no,};
-		\node at (7.056,2.0667) {$s$ is a counterexample};
-		\draw [-{>[scale=2]}] (b1) edge (b2);
-		\node at (6.7557,0.2778) {$Equ(C)$};
-		\draw [-{>[scale=2]}] (b2) edge (b3);
-		\node at (13,0.2666) {yes};
-		\draw [-{>[scale=2]}] (b3) -- (16,-1.3) -- (4, -1.3) -- (b1);
-		\node at (13.5999,-1.0333) {no, $c$ is an counterexample};
-		\draw [-{>[scale=2]}](b2) -- (10,1.3001) -- (21,1.3001) -- (a4);
-		\node at (11.0999,1.0112) {no, $Equ(C)$};
-		\draw [-{>[scale=2]}](a4) -- (a3);
-		\node at (12.1,4.2557) {yes};
-		\draw [-{>[scale=2]}](a3) -- (a2);
-		\node at (18.1666,4.2555) {$S$};
-		\draw [-{>[scale=2]}](a2) -- (9,5.5333) --(3.8,5.5333) --  (e1);
-		\node at (8.5777,5.222) {yes};
-		\draw [-{>[scale=2]}](a3)  -- (15,5.5333) --(18.6,5.5333) -- (g1);
-		\node at (15.3555,5.2111) {no};
-		\draw [-{>[scale=2]}](b3) -- (e2);
-		\node at (19.6318,0.2666) {yes};
+The yellow box and the components within it represents our design of a mechanical teacher, whose objective is to answer the queries presented by the learning algorithm. When given a membership query $Mem(w)$, the teacher answers by constructing the path corresponding to decision vector $w$ and the associated path formula, then solve it using a ready-made constraint solver (cf. \ref{ch:mem}). Equivalence queries, on the other hand, are answered with a concolic tester by checking whether a decision vector $s$ exists in the set of batched samples $S$ such that $s$ is not in the language of the candidate automaton proposed by the learning algorithm, $C$. If all decision vectors in the set of batched samples are also in the language of $C$, we then conclude that the program is $\PAC$. However, if a decision vector $s$ exists such that it is not in the language of the candidate automaton ($\exists s \in S. s \notin L(C)$), we then test if $s$ is an error decision vector -- if $s \in L(B)$. If $s$ is not an error decision vector, then we know that $s$ is a feasible decision vector sampled from the program, but is not in the language of the candidate automaton. Then, $s$ should be reported to the learning algorithm in order to refine the candidate automaton. On the contrary, if $s$ is indeed an error decision vector, then through implying that a sampled decision vector (which is undoubtedly feasible) is also an error decision vector, we can conclude that a feasible error decision $s$ is found in the program, and we return $s$ to the user. 
+	
+\begin{figure}[hb]
+	\centering	
+	\begin{tikzpicture}[node distance=2cm, scale=0.7, every node/.style={scale=0.7}]
+	\usetikzlibrary{arrows.meta}
+	% Draw big boxes
+	\draw[align=center, rounded corners, fill=yellow!20] (-15.1474,6) rectangle (8.8526,2.5) {};
+	\node[draw=none] at (-3.1474,5.7145) {\textbf{Mechanical Teacher}};
+	\draw[align=center, rounded corners, fill=green!20] (-14.1474,1.5) rectangle (3.8526,-2) {};
+	\node[draw=none] at (-5.1474,-1.7145) {\textbf{PAC Automata Learning Algorithm (Chapter \ref{ch:PAC})}};
+	% Draw small boxes and diamonds
+	\node[draw, align=center, rounded corners, fill=blue!20, text width=3.5cm] (a1) at (-12.1474,4) {Build and check the path formula of $w$ (Chapter \ref{ch:mem})};
+	\node[draw, diamond, aspect=3, fill=blue!20, text width=3.3cm, inner sep=0pt, text badly centered] (a2) at (-6.1474,4) {$s \in L(B)$?};
+	\node[draw, diamond, aspect=3, fill=blue!20, text width=3.3cm, inner sep=0pt, text badly centered] (a3) at (-0.1474,4) {$\exists s \in S. s \notin L(C)$?};
+	\node[draw, align=center, rounded corners, fill=blue!20, text width=3.5cm] (a4) at (5.8526,4) {Sample a set $S$ of decision vectors (Chapter \ref{ch:eq})};
+	\node[draw, align=center, rounded corners, fill=blue!20, text width=3.5cm] (b1) at (-11.1474,0) {Build/Refine Model (Learning Algorithm)};
+	\node[draw, diamond, aspect=3, fill=blue!20, text width=4cm, inner sep=-2pt, text badly centered] (b2) at (-5.1474,0) {$\exists c. c \in L(C) \cap L(B)$?};
+	\node[draw, diamond, aspect=3, fill=blue!20, text width=3.3cm, inner sep=0pt, text badly centered] (b3) at (0.8526,0) {$c \in \mathsf{decision}(\Pi)$?};
+	\node[draw, align=center, rounded corners, fill=red!20, text width=3.5cm] (e1) at (-11.3474,6.9) {$s$ is a feasible error decision vector};
+	\node[draw, align=center, rounded corners, fill=red!20, text width=3.5cm] (e2) at (7.2299,0) {$c$ is a feasible error decision vector};
+	\node[draw, align=center, rounded corners, fill=cyan!20, text width=3.5cm] (g1) at (3.4526,6.9) {The system is $PAC(\epsilon, \delta)$-correct};
+	% Draw edges
+	\node at (-10.9364,2.0554) {yes/no};
+	\node at (-13.3247,2.0221) {$Mem(w)$};
+	\draw [-{>[scale=2]}] (a2) -- (-6.1483,1.8) -- (-9.8259,1.8) -- (-9.8251,0.8cm);
+	\draw [-{>[scale=2]}] (-11.6474,3.2) -- (-11.6474,0.8);
+	\draw [-{>[scale=2]}] (-12.4359,0.8) -- (-12.4359,3.2);
+	\node at (-6.5363,2.9222) {no,};
+	\node at (-8.0914,2.0667) {$s$ is a counterexample};
+	\draw [-{>[scale=2]}] (b1) edge (b2);
+	\node at (-8.3917,0.2778) {$Equ(C)$};
+	\draw [-{>[scale=2]}] (b2) edge (b3);
+	\node at (-2.1474,0.2666) {yes};
+	\draw [-{>[scale=2]}] (b3) -- (0.8526,-1.3) -- (-11.1474,-1.3) -- (b1);
+	\node at (-1.5475,-1.0333) {no, $c$ is an counterexample};
+	\draw [-{>[scale=2]}](b2) -- (-5.1474,1.3001) -- (5.8526,1.3001) -- (a4);
+	\node at (-4.0475,1.0112) {no, $Equ(C)$};
+	\draw [-{>[scale=2]}](a4) -- (a3);
+	\node at (-3.0474,4.2557) {yes};
+	\draw [-{>[scale=2]}](a3) -- (a2);
+	\node at (3.0192,4.2555) {$S$};
+	\draw [-{>[scale=2]}](a2) -- (-6.1474,5.5333) --(-11.3474,5.5333) --  (e1);
+	\node at (-6.5697,5.222) {yes};
+	\draw [-{>[scale=2]}](a3)  -- (-0.1474,5.5333) --(3.4526,5.5333) -- (g1);
+	\node at (0.2081,5.2111) {no};
+	\draw [-{>[scale=2]}](b3) -- (e2);
+	\node at (4.4844,0.2666) {yes};
 	\end{tikzpicture}
 	\caption{Detailed flowchart of the learning-based procedure}
 	\label{figure:learning}
 \end{figure}
+
+Generally speaking, the learning procedure is not guaranteed to terminate. When the procedure terminates and reports an error (regardless of whether it is found by the teacher or the learning algorithm), a feasible error decision vector is found and the program is reported as incorrect. If the teacher approves a candidate finite automaton $C$, our learning procedure reports $C$ as an approximate model of the set of feasible decision vectors $\DEC(\Pi)$. This approximate model is given with respect to the $\PAC$ness guarantee, which consequently implies that the program is $\PAC$. From \ref{lem:equ_C_pac}, we have the following theorem:
+
+\begin{theorem}
+	Let $\epsilon$ and $\delta$ be the error and confidence parameters respectively, and $\Pi$ be the set of feasible paths of a given CFG $G$. If our procedure terminates with an approximate finite automaton $C$, the program is $\PAC$. 
+\end{theorem}
+
+Moreover, we obtain the following corollary.
+
+\begin{corollary}
+	Suppose our learning procedure reports a program $P$ as $\PAC$. If we run the concolic tester with the same search strategy and batch size used in our procedure on $P$, then with confidence $\delta$, the concolic tester will find an error with a probability less than $\epsilon$. 
+\end{corollary}
+
+Due to the properties of the aforementioned modified automata learning algorithm, when $\DEC(\Pi)$ is a regular set, our algorithm is guaranteed to terminate and report either of the following:
+\begin{itemize}
+	\item a counterexample $c \in L(B) \cap \DEC(\Pi)$, or
+	\item an approximate model of $\DEC(\Pi)$ that is disjoint with $L(B)$.
+\end{itemize}
