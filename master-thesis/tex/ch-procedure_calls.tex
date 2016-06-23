@@ -10,4 +10,27 @@ Assume the set of procedure names $\mathcal{P}$. A \emph{CFG with calls} (CGFC) 
 
 In this scenario, we define a \emph{program} as a set of CFGCs $prog = {G_1, \dots, G_n}$ along with a bijective mapping $cfgc_{prog} : \mathcal{P} \mapsto prog$ that assigns procedure names to CFGCs. We abuse this notation and use $prog$ to denote $cfgc_{prog}$, i.e. $prog(p)$ denotes the CFGC of a procedure $p$ in a program $prog$. We then assume that all CFGCs in $prog$ have pairwise disjoint set of nodes, and furthur assume an entry point $\mathtt{main} \in \mathcal{P}$. 
 
-We then give an intuitive description of how we extend the definition of a path from a program consisting of single CFG to a program consisting of a set of CFGCs and a dedicated entry point. Given a procedure call edge $e$ in a CFGC $G$, we call the \emph{inlining} of $e$ in $G$ the CFGC $G'$ obtained from $G$ by substituting $e$ with the CFGC of the called procedure. We use $[\![prog]\!]$ to denote the set of CFGs obtained from $prog(\mathtt{main})$ by performing all possible (even recursively called) sequences of inlinings, and removing any left procedure call edges from the output CFGCs. A \emph{path} in $prog$ is then a sequence $\pi = \langle v_0, f_1, v_1, f_2, v_2, \dots , f_m, v_m \rangle$ such that there exists a CFG $G' \in [\![prog]\!]$ for which it holds that $\pi \in G'$. 
+Finally, we give an intuitive description of how we extend the definition of a path from a program consisting of single CFG to a program consisting of a set of CFGCs and a dedicated entry point. Given a procedure call edge $e$ in a CFGC $G$, we call the \emph{inlining} of $e$ in $G$ the CFGC $G'$ obtained from $G$ by substituting $e$ with the CFGC of the called procedure. We use $[\![prog]\!]$ to denote the set of CFGs obtained from $prog(\mathtt{main})$ by performing all possible (even recursively called) sequences of inlinings, and removing any left procedure call edges from the output CFGCs. A \emph{path} in $prog$ is then a sequence $\pi = \langle v_0, f_1, v_1, f_2, v_2, \dots , f_m, v_m \rangle$ such that there exists a CFG $G' \in [\![prog]\!]$ for which it holds that $\pi \in G'$. 
+
+\section{Encoding Error Decision Vectors with Pushdown Automata}\label{sec:pda}
+
+We will describe our construction of the PDA encoding the set of error decision vectors in the aforementioned extension. Generally speaking, the idea is basically identical to that for the finite automata, which is described in detail in \ref{ch:error}. The difference is that we add "jumps" between CFGCs (which corresponds to procedure call edges), where the CFGCs utilize stacks to memorize which state the PDA should return to after a specific procedure call terminates. 
+
+Given a CFGC $G = (V, E, v_i, v_r, V_e, \mathcal{X}_{FP})$, we use $V(G), E(G), \dots, \mathcal{X}_{FP}(G)$ to denote the corresponding components of $G$. Moreover, we use $V_s(G)$ and $V_b(G)$ to denote the sequential and branching nodes within $G$ respectively. Consider a program $prog = {G_1, \dots, G_n}$. We construct the \emph{error path automaton} as the PDA $B_P = ({0,1}, Q, Q, q_i, \Delta, F)$ such that: 
+\begin{itemize}
+	\item $Q = V(G_1) \cup \dots \cup V(G_n)$,
+	\item $q_i = v_i(G_k)$ such that $prog(\mathtt{main}) = G_k$,
+	\item $F = V_e(G_1) \cup \dots \cup V_e(G_n),$
+	\item $\Delta = \Delta_1 \cup \dots \cup \Delta_n$, where each $\Delta_j , j \in [1,n]$ is defined as follows:
+	\begin{itemize}
+		\item $(v, 0, v_0') \in \Delta_j$ if $ v \in V_b(G_j) \setminus V_e(G_j), (v, f_0, v_0') \in E(G_j)$, and $v_0'$ is the 0-successor of $v$;
+		\item $(v, 1, v_1') \in \Delta_j$ if $ v \in V_b(G_j) \setminus V_e(G_j), (v, f_1, v_1') \in E(G_j)$, and $v_1'$ is the 1-successor of $v$;
+		\item $(v, \lambda, v') \in \Delta_j$ if $v \in V_s(G_j) \setminus V_e(G_j)$ and $(v, f, v') \in E(G_j)$;
+		\item $(v, 0, v) , (v, 1, v) $ if $ v \in V_e(G_j)$; and
+		\item $(v, [\lambda;\lambda/v'], v_i(G_k)), (v_r(G_k), [\lambda;v/\lambda], v') \in \Delta_j$ if $v \in V_s(G_j) \setminus V_e(G_j), \\ (v, (p, g_{in}, g_{out}), v') \in E(G_j)$, and $G_k = prog(p)$.
+	\end{itemize}
+\end{itemize}
+
+\begin{lemma}
+	Let $prog$ be a program, $\mathcal{B}$ be the set of error paths of $prog$, and $B_P$ be the error path PDA for $prog$. Then it holds that $L(B_P) = \DEC(\mathcal{B})$.
+\end{lemma}

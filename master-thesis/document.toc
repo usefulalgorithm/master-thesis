@@ -44,34 +44,38 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {10.1}Extending CFGs with Procedure Calls}{27}{section.10.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {11}The Sampling-based Procedure}{29}{chapter.11}
+\contentsline {section}{\numberline {10.2}Encoding Error Decision Vectors with Pushdown Automata}{28}{section.10.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {12}Proving via Transformation}{30}{chapter.12}
+\contentsline {chapter}{\numberline {11}The Sampling-based Procedure}{30}{chapter.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.1}Unwinding}{30}{section.12.1}
+\contentsline {chapter}{\numberline {12}Implementation}{31}{chapter.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.1}Function Inlining Method}{31}{subsection.12.1.1}
+\contentsline {chapter}{\numberline {13}Proving via Transformation}{32}{chapter.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.1.2}Function Duplicating Method}{32}{subsection.12.1.2}
+\contentsline {section}{\numberline {13.1}Unwinding}{32}{section.13.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.2}Under-approximation}{35}{section.12.2}
+\contentsline {subsection}{\numberline {13.1.1}Function Inlining Method}{33}{subsection.13.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.1}Approximating Functions}{35}{subsection.12.2.1}
+\contentsline {subsection}{\numberline {13.1.2}Function Duplicating Method}{34}{subsection.13.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.2}Approximating Programs from Function Inlining Method}{36}{subsection.12.2.2}
+\contentsline {section}{\numberline {13.2}Under-approximation}{37}{section.13.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {12.2.3}Approximating Programs from Function Duplicating Method}{36}{subsection.12.2.3}
+\contentsline {subsection}{\numberline {13.2.1}Approximating Functions}{37}{subsection.13.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.3}Computing Summaries}{37}{section.12.3}
+\contentsline {subsection}{\numberline {13.2.2}Approximating Programs from Function Inlining Method}{38}{subsection.13.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.4}Checking Summaries}{39}{section.12.4}
+\contentsline {subsection}{\numberline {13.2.3}Approximating Programs from Function Duplicating Method}{38}{subsection.13.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {12.5}Correctness}{41}{section.12.5}
+\contentsline {section}{\numberline {13.3}Computing Summaries}{39}{section.13.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Experiments}{43}{chapter.13}
+\contentsline {section}{\numberline {13.4}Checking Summaries}{41}{section.13.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.1}Implementation}{43}{section.13.1}
+\contentsline {section}{\numberline {13.5}Correctness}{43}{section.13.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {13.2}Experiments}{44}{section.13.2}
+\contentsline {chapter}{\numberline {14}Experiments}{45}{chapter.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}Conclusion}{49}{chapter.14}
+\contentsline {section}{\numberline {14.1}Implementation}{45}{section.14.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14.2}Experiments}{46}{section.14.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {15}Conclusion}{51}{chapter.15}
