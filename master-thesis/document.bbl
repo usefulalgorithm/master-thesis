@@ -665,6 +665,58 @@
   \field{year}{2009}
 \endentry
 
+\entry{GodefroidKS05}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Godefroid}{G.}%
+     {Patrice}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Klarlund}{K.}%
+     {Nils}{N.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Sen}{S.}%
+     {Koushik}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GPKNSK1}
+  \strng{fullhash}{GPKNSK1}
+  \field{booktitle}{Proc. of {PLDI}'05}
+  \field{pages}{213\bibrangedash 223}
+  \field{title}{{DART}: directed automated random testing}
+  \field{year}{2005}
+\endentry
+
+\entry{SenMA05}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Sen}{S.}%
+     {Koushik}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marinov}{M.}%
+     {Darko}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Agha}{A.}%
+     {Gul}{G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SKMDAG1}
+  \strng{fullhash}{SKMDAG1}
+  \field{booktitle}{Proc. of {FSE}'05}
+  \field{pages}{263\bibrangedash 272}
+  \field{title}{{CUTE}: a concolic unit testing engine for {C}}
+  \field{year}{2005}
+\endentry
+
 \entry{Angluin87}{article}{}
   \name{author}{1}{}{%
     {{}%
@@ -863,58 +915,6 @@
   \field{journaltitle}{Communications of the ACM}
   \field{month}{11}
   \field{year}{1984}
-\endentry
-
-\entry{GodefroidKS05}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Godefroid}{G.}%
-     {Patrice}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Klarlund}{K.}%
-     {Nils}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sen}{S.}%
-     {Koushik}{K.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{GPKNSK1}
-  \strng{fullhash}{GPKNSK1}
-  \field{booktitle}{Proc. of {PLDI}'05}
-  \field{pages}{213\bibrangedash 223}
-  \field{title}{{DART}: directed automated random testing}
-  \field{year}{2005}
-\endentry
-
-\entry{SenMA05}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Sen}{S.}%
-     {Koushik}{K.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Marinov}{M.}%
-     {Darko}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Agha}{A.}%
-     {Gul}{G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{SKMDAG1}
-  \strng{fullhash}{SKMDAG1}
-  \field{booktitle}{Proc. of {FSE}'05}
-  \field{pages}{263\bibrangedash 272}
-  \field{title}{{CUTE}: a concolic unit testing engine for {C}}
-  \field{year}{2005}
 \endentry
 
 \entry{BurnimS08}{inproceedings}{}
