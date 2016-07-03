@@ -981,6 +981,139 @@
   \field{year}{2015}
 \endentry
 
+\entry{MatzMPTV95}{misc}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Matz}{M.}%
+     {Oliver}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Miller}{M.}%
+     {Axel}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Potthoff}{P.}%
+     {Adreas}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Thomas}{T.}%
+     {Wolfgang}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Valkema}{V.}%
+     {Erich}{E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{MOMAPA+1}
+  \strng{fullhash}{MOMAPATWVE1}
+  \field{title}{Report on the program {AMoRE}}
+  \field{year}{1995}
+\endentry
+
+\entry{BolligKKLNP10}{inproceedings}{}
+  \name{author}{6}{}{%
+    {{}%
+     {Bollig}{B.}%
+     {Benedikt}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Katoen}{K.}%
+     {Joost{-}Pieter}{J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kern}{K.}%
+     {Carsten}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leucker}{L.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Neider}{N.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Piegdon}{P.}%
+     {David~Rasmus}{D.~R.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BBKJKC+1}
+  \strng{fullhash}{BBKJKCLMNDPDR1}
+  \field{booktitle}{Proc. of {CAV}'10}
+  \field{pages}{360\bibrangedash 364}
+  \field{title}{{l}ib{ALF}: the automata learning framework}
+  \field{year}{2010}
+\endentry
+
+\entry{DudkaPV11}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Dudka}{D.}%
+     {Kamil}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Peringer}{P.}%
+     {Petr}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vojnar}{V.}%
+     {Tom\'{a}\v{s}}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{DKPPVT1}
+  \strng{fullhash}{DKPPVT1}
+  \field{booktitle}{Proc. of {CAV}'11}
+  \field{pages}{372\bibrangedash 378}
+  \field{title}{Predator: a practical tool for checking manipulation of dynamic
+  data structures using seperation logic}
+  \field{year}{2011}
+\endentry
+
+\entry{GurfinkelKKN15}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Gurfinkel}{G.}%
+     {Arie}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kahsei}{K.}%
+     {Temesghen}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Komuravelli}{K.}%
+     {Anvesh}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Navas}{N.}%
+     {Jorge~A.}{J.~A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{GAKTKA+1}
+  \strng{fullhash}{GAKTKANJA1}
+  \field{booktitle}{Proc. of {CAV}'15}
+  \field{pages}{343\bibrangedash 361}
+  \field{title}{The {S}ea{H}orn verification framework}
+  \field{year}{2015}
+\endentry
+
 \entry{Dolzmann97}{article}{}
   \name{author}{2}{}{%
     {{}%
