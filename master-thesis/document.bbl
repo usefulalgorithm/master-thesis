@@ -16,431 +16,205 @@
   {}
 \endgroup
 
-\entry{ClarkeJS05}{inproceedings}{}
-  \name{author}{3}{}{%
+\entry{Angluin87}{article}{}
+  \name{author}{1}{}{%
     {{}%
-     {Clarke}{C.}%
-     {Edmund~M.}{E.~M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Jain}{J.}%
-     {Himanshu}{H.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sinha}{S.}%
-     {Nishant}{N.}%
+     {Angluin}{A.}%
+     {Dana}{D.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{CEMJHSN1}
-  \strng{fullhash}{CEMJHSN1}
-  \field{booktitle}{Proc. the {NATO} Advanced Research Workshop on Verification
-  of Infinite State Systems with Applications to Security ({VISSAS} 2005)}
-  \field{pages}{55\bibrangedash 68}
-  \field{title}{Grand Challenge: Model Check Software}
-  \list{location}{1}{%
-    {Timi{\c{s}}oara, Rom{\^{a}}nia}%
-  }
-  \field{year}{2005}
+  \strng{namehash}{AD1}
+  \strng{fullhash}{AD1}
+  \field{number}{2}
+  \field{pages}{87\bibrangedash 106}
+  \field{title}{Learning regular sets from queries and counterexamples}
+  \field{volume}{75}
+  \field{journaltitle}{Information and Computation}
+  \field{month}{11}
+  \field{year}{1987}
 \endentry
 
-\entry{BeyerK11}{inproceedings}{}
+\entry{RivestS93}{article}{}
   \name{author}{2}{}{%
     {{}%
-     {Beyer}{B.}%
-     {Dirk}{D.}%
+     {Rivest}{R.}%
+     {Ronald~L.}{R.~L.}%
      {}{}%
      {}{}}%
     {{}%
-     {Keremoglu}{K.}%
-     {M.~Erkan}{M.~E.}%
+     {Schapire}{S.}%
+     {Robert~E.}{R.~E.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{BDKME1}
-  \strng{fullhash}{BDKME1}
-  \field{booktitle}{Proc. {CAV}'11}
-  \field{pages}{184\bibrangedash 190}
-  \field{title}{{CPA}checker: {A} Tool for Configurable Software Verification}
-  \list{location}{1}{%
-    {Snowbird, UT, USA}%
+  \strng{namehash}{RRLSRE1}
+  \strng{fullhash}{RRLSRE1}
+  \field{number}{2}
+  \field{pages}{299\bibrangedash 347}
+  \field{title}{Inference of finite automata using homing sequences}
+  \field{volume}{103}
+  \field{journaltitle}{Information and Computation}
+  \field{month}{04}
+  \field{year}{1993}
+\endentry
+
+\entry{KearnsV94}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Kearns}{K.}%
+     {Michael~J.}{M.~J.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Vazirani}{V.}%
+     {Umesh~Virkumar}{U.~V.}%
+     {}{}%
+     {}{}}%
   }
+  \list{publisher}{1}{%
+    {MIT Press}%
+  }
+  \strng{namehash}{KMJVUV1}
+  \strng{fullhash}{KMJVUV1}
+  \field{title}{An Introduction to Computational Learning Theory}
+  \list{location}{1}{%
+    {Cambridge, MA, USA}%
+  }
+  \field{year}{1994}
+\endentry
+
+\entry{BolligHKL09}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Bollig}{B.}%
+     {Benedikt}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Habermeh}{H.}%
+     {Peter}{P.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kern}{K.}%
+     {Carsten}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leucker}{L.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BBHPKC+1}
+  \strng{fullhash}{BBHPKCLM1}
+  \field{booktitle}{Proc. of {IJCAI}'09}
+  \field{pages}{1004\bibrangedash 1009}
+  \field{title}{Angluin-style learning of {NFA}}
+  \field{year}{2009}
+\endentry
+
+\entry{Valiant84}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Valiant}{V.}%
+     {Leslie~G.}{L.~G.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{VLG1}
+  \strng{fullhash}{VLG1}
+  \field{number}{11}
+  \field{pages}{1134\bibrangedash 1142}
+  \field{title}{A theory of the learnable}
+  \field{volume}{27}
+  \field{journaltitle}{Communications of the ACM}
+  \field{month}{11}
+  \field{year}{1984}
+\endentry
+
+\entry{Angluin88}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Angluin}{A.}%
+     {Dana}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AD1}
+  \strng{fullhash}{AD1}
+  \field{number}{4}
+  \field{pages}{319\bibrangedash 342}
+  \field{title}{Queries and concept learning}
+  \field{volume}{2}
+  \field{journaltitle}{Machine Learning}
+  \field{month}{04}
+  \field{year}{1988}
+\endentry
+
+\entry{Walkinshaw11}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Walkinshaw}{W.}%
+     {Neil}{N.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{WN1}
+  \strng{fullhash}{WN1}
+  \field{booktitle}{Proc. of {ICTSS}'11}
+  \field{pages}{209\bibrangedash 224}
+  \field{title}{Assessing test adequacy for black-box systems without
+  specifications}
   \field{year}{2011}
 \endentry
 
-\entry{svcomp14}{inproceedings}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Beyer}{B.}%
-     {Dirk}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{tacas2014}
-  \strng{namehash}{BD1}
-  \strng{fullhash}{BD1}
-  \field{booktitle}{Proc. {TACAS}'14}
-  \field{pages}{373\bibrangedash 388}
-  \field{title}{Status Report on Software Verification - (Competition Summary
-  {SV-COMP} 2014)}
-  \verb{url}
-  \verb http://sv-comp.sosy-lab.org/2014/
-  \endverb
-  \list{location}{1}{%
-    {Grenoble, France}%
-  }
-  \field{year}{2014}
-\endentry
-
-\entry{ChenHTWW14}{inproceedings}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Chen}{C.}%
-     {Yu{-}Fang}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hsieh}{H.}%
-     {Chiao}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tsai}{T.}%
-     {Ming{-}Hsien}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wang}{W.}%
-     {Bow{-}Yaw}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wang}{W.}%
-     {Farn}{F.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CYHCTM+1}
-  \strng{fullhash}{CYHCTMWBWF1}
-  \field{booktitle}{Proc. {SAS}'14}
-  \field{pages}{118\bibrangedash 133}
-  \field{title}{Verifying Recursive Programs Using Intraprocedural Analyzers}
-  \list{location}{1}{%
-    {Munich, Germany}%
-  }
-  \field{year}{2014}
-\endentry
-
-\entry{svcomp15}{inproceedings}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Beyer}{B.}%
-     {Dirk}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{tacas2015}
-  \strng{namehash}{BD1}
-  \strng{fullhash}{BD1}
-  \field{booktitle}{Proc. {TACAS}'15}
-  \field{pages}{401\bibrangedash 416}
-  \field{title}{Software Verification and Verifiable Witnesses - (Report on
-  {SV-COMP} 2015)}
-  \verb{url}
-  \verb http://sv-comp.sosy-lab.org/2015/
-  \endverb
-  \list{location}{1}{%
-    {London, UK}%
-  }
-  \field{year}{2015}
-\endentry
-
-\entry{ChenHTWW15}{inproceedings}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Chen}{C.}%
-     {Yu{-}Fang}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hsieh}{H.}%
-     {Chiao}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tsai}{T.}%
-     {Ming{-}Hsien}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wang}{W.}%
-     {Bow{-}Yaw}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wang}{W.}%
-     {Farn}{F.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{tacas2015}
-  \strng{namehash}{CYHCTM+1}
-  \strng{fullhash}{CYHCTMWBWF1}
-  \field{booktitle}{Proc. {TACAS}'15}
-  \field{pages}{426\bibrangedash 428}
-  \field{title}{{CPArec}: {Verifying} Recursive Programs via Source-to-Source
-  Program Transformation - (Competition Contribution)}
-  \list{location}{1}{%
-    {London, UK}%
-  }
-  \field{year}{2015}
-\endentry
-
-\entry{BeyerHJM07}{article}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Beyer}{B.}%
-     {Dirk}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Henzinger}{H.}%
-     {Thomas~A.}{T.~A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Jhala}{J.}%
-     {Ranjit}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Majumdar}{M.}%
-     {Rupak}{R.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BDHTAJR+1}
-  \strng{fullhash}{BDHTAJRMR1}
-  \field{number}{5-6}
-  \field{pages}{505\bibrangedash 525}
-  \field{title}{The software model checker \textsc{Blast}}
-  \field{volume}{9}
-  \field{journaltitle}{Int. J. Software Tools for Technology Transfer}
-  \field{month}{09}
-  \field{year}{2007}
-\endentry
-
-\entry{AlbarghouthiLGC12}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Albarghouthi}{A.}%
-     {Aws}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Li}{L.}%
-     {Yi}{Y.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Gurfinkel}{G.}%
-     {Arie}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Chechik}{C.}%
-     {Marsha}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AALYGA+1}
-  \strng{fullhash}{AALYGACM1}
-  \field{booktitle}{Proc. {CAV}'12}
-  \field{pages}{672\bibrangedash 678}
-  \field{title}{\textsc{Ufo}: {A} Framework for Abstraction- and
-  Interpolation-Based Software Verification}
-  \list{location}{1}{%
-    {Berkeley, CA, USA}%
-  }
-  \field{year}{2012}
-\endentry
-
-\entry{RepsHS95}{inproceedings}{}
+\entry{GoldreichGR98}{article}{}
   \name{author}{3}{}{%
     {{}%
-     {Reps}{R.}%
-     {Thomas~W.}{T.~W.}%
+     {Goldreich}{G.}%
+     {Oded}{O.}%
      {}{}%
      {}{}}%
     {{}%
-     {Horwitz}{H.}%
-     {Susan}{S.}%
+     {Goldwasser}{G.}%
+     {Shari}{S.}%
      {}{}%
      {}{}}%
     {{}%
-     {Sagiv}{S.}%
-     {Shmuel}{S.}%
+     {Ron}{R.}%
+     {Dana}{D.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{RTWHSSS1}
-  \strng{fullhash}{RTWHSSS1}
-  \field{booktitle}{Proc. {POPL}'95}
-  \field{pages}{49\bibrangedash 61}
-  \field{title}{Precise Interprocedural Dataflow Analysis via Graph
-  Reachability}
-  \list{location}{1}{%
-    {San Francisco, CA, USA}%
-  }
-  \field{year}{1995}
+  \strng{namehash}{GOGSRD1}
+  \strng{fullhash}{GOGSRD1}
+  \field{number}{4}
+  \field{pages}{653\bibrangedash 750}
+  \field{title}{Property testing and its connection to learning and
+  approximation}
+  \field{volume}{45}
+  \field{journaltitle}{Journal of {ACM}}
+  \field{month}{07}
+  \field{year}{1998}
 \endentry
 
-\entry{BallR01}{inproceedings}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Ball}{B.}%
-     {Thomas}{T.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Rajamani}{R.}%
-     {Sriram~K.}{S.~K.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BTRSK1}
-  \strng{fullhash}{BTRSK1}
-  \field{booktitle}{Proc. {CAV}'01}
-  \field{pages}{260\bibrangedash 264}
-  \field{title}{The {SLAM} Toolkit}
-  \list{location}{1}{%
-    {Paris, France}%
-  }
-  \field{year}{2001}
-\endentry
-
-\entry{CousotCFMMMR05}{inproceedings}{}
-  \name{author}{7}{}{%
-    {{}%
-     {Cousot}{C.}%
-     {Patrick}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Cousot}{C.}%
-     {Radhia}{R.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Feret}{F.}%
-     {J{\'{e}}r{\^{o}}me}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Mauborgne}{M.}%
-     {Laurent}{L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Min{\'{e}}}{M.}%
-     {Antoine}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Monniaux}{M.}%
-     {David}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Rival}{R.}%
-     {Xavier}{X.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CPCRFJ+1}
-  \strng{fullhash}{CPCRFJMLMAMDRX1}
-  \field{booktitle}{Proc. {ESOP}'05}
-  \field{pages}{21\bibrangedash 30}
-  \field{title}{The {ASTRE{\'{E}}} Analyzer}
-  \list{location}{1}{%
-    {Edinburgh, UK}%
-  }
-  \field{year}{2005}
-\endentry
-
-\entry{CuoqKKPSY12}{inproceedings}{}
+\entry{ChapmanCKKST15}{inproceedings}{}
   \name{author}{6}{}{%
     {{}%
-     {Cuoq}{C.}%
+     {Chapman}{C.}%
+     {Martin}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Chockler}{C.}%
+     {Hana}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kesseli}{K.}%
      {Pascal}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kirchner}{K.}%
-     {Florent}{F.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kosmatov}{K.}%
-     {Nikolai}{N.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Prevosto}{P.}%
-     {Virgile}{V.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Signoles}{S.}%
-     {Julien}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Yakobowski}{Y.}%
-     {Boris}{B.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{CPKFKN+1}
-  \strng{fullhash}{CPKFKNPVSJYB1}
-  \field{booktitle}{Proc. {SEFM}'12}
-  \field{pages}{233\bibrangedash 247}
-  \field{title}{{Frama-C}: {A} Software Analysis Perspective}
-  \list{location}{1}{%
-    {Thessaloniki, Greece}%
-  }
-  \field{year}{2012}
-\endentry
-
-\entry{coverity}{online}{}
-  \list{organization}{1}{%
-    {Coverity, Inc.}%
-  }
-  \field{title}{Coverity}
-  \verb{url}
-  \verb http://www.coverity.com/
-  \endverb
-  \field{year}{2015}
-\endentry
-
-\entry{polyspace}{online}{}
-  \list{organization}{1}{%
-    {The MathWorks, Inc.}%
-  }
-  \field{title}{Polyspace}
-  \verb{url}
-  \verb http://www.mathworks.com/products/polyspace/
-  \endverb
-  \field{year}{2015}
-\endentry
-
-\entry{ClarkeKL04}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Clarke}{C.}%
-     {Edmund~M.}{E.~M.}%
      {}{}%
      {}{}}%
     {{}%
@@ -449,220 +223,104 @@
      {}{}%
      {}{}}%
     {{}%
-     {Lerda}{L.}%
-     {Flavio}{F.}%
+     {Strichman}{S.}%
+     {Ofer}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tautschnig}{T.}%
+     {Michael}{M.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{CEMKDLF1}
-  \strng{fullhash}{CEMKDLF1}
-  \field{booktitle}{Proc. {TACAS}'04}
-  \field{pages}{168\bibrangedash 176}
-  \field{title}{A Tool for Checking {ANSI-C} Programs}
-  \list{location}{1}{%
-    {Barcelona, Spain}%
+  \strng{namehash}{CMCHKP+1}
+  \strng{fullhash}{CMCHKPKDSOTM1}
+  \field{booktitle}{Proc. of {ATVA}'15}
+  \field{pages}{114\bibrangedash 130}
+  \field{title}{Learning the language of error}
+  \field{year}{2015}
+\endentry
+
+\entry{SenVA04}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Sen}{S.}%
+     {Koushik}{K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Viswanathan}{V.}%
+     {Mahesh}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Agha}{A.}%
+     {Gul}{G.}%
+     {}{}%
+     {}{}}%
   }
+  \strng{namehash}{SKVMAG1}
+  \strng{fullhash}{SKVMAG1}
+  \field{booktitle}{Proc. of {CAV}'04}
+  \field{pages}{202\bibrangedash 215}
+  \field{title}{Statistical model checking of black-box probabilistic systems}
   \field{year}{2004}
 \endentry
 
-\entry{HeizmannCDEHLNSP13}{inproceedings}{}
-  \name{author}{9}{}{%
-    {{}%
-     {Heizmann}{H.}%
-     {Matthias}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Christ}{C.}%
-     {J{\"u}rgen}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dietsch}{D.}%
-     {Daniel}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Ermis}{E.}%
-     {Evren}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hoenicke}{H.}%
-     {Jochen}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lindenmann}{L.}%
-     {Markus}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Nutz}{N.}%
-     {Alexander}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Schilling}{S.}%
-     {Christian}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Podelski}{P.}%
-     {Andreas}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{HMCJDD+1}
-  \strng{fullhash}{HMCJDDEEHJLMNASCPA1}
-  \field{booktitle}{Proc. {TACAS}'13}
-  \field{pages}{641\bibrangedash 643}
-  \field{title}{{Ultimate Automizer} with {SMTInterpol} - (Competition
-  Contribution)}
-  \list{location}{1}{%
-    {Rome, Italy}%
-  }
-  \field{year}{2013}
-\endentry
-
-\entry{ErmisNDHP14}{inproceedings}{}
-  \name{author}{5}{}{%
-    {{}%
-     {Ermis}{E.}%
-     {Evren}{E.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Nutz}{N.}%
-     {Alexander}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Dietsch}{D.}%
-     {Daniel}{D.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Hoenicke}{H.}%
-     {Jochen}{J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Podelski}{P.}%
-     {Andreas}{A.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{tacas2014}
-  \strng{namehash}{EENADD+1}
-  \strng{fullhash}{EENADDHJPA1}
-  \field{booktitle}{Proc. {TACAS}'14}
-  \field{pages}{421\bibrangedash 423}
-  \field{title}{{Ultimate Kojak} - (Competition Contribution)}
-  \list{location}{1}{%
-    {Grenoble, France}%
-  }
-  \field{year}{2014}
-\endentry
-
-\entry{AlbarghouthiGC12}{inproceedings}{}
+\entry{LegayDB10}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
-     {Albarghouthi}{A.}%
-     {Aws}{A.}%
+     {Legay}{L.}%
+     {Axel}{A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Gurfinkel}{G.}%
-     {Arie}{A.}%
+     {Delahaye}{D.}%
+     {Beno\^{\i}t}{B.}%
      {}{}%
      {}{}}%
     {{}%
-     {Chechik}{C.}%
-     {Marsha}{M.}%
+     {Bensalem}{B.}%
+     {Saddek}{S.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{AAGACM1}
-  \strng{fullhash}{AAGACM1}
-  \field{booktitle}{Proc. {VMCAI}'12}
-  \field{pages}{39\bibrangedash 55}
-  \field{title}{\textsc{Whale}: {An} Interpolation-Based Algorithm for
-  Inter-procedural Verification}
-  \list{location}{1}{%
-    {Philadelphia, PA, USA}%
-  }
-  \field{year}{2012}
+  \strng{namehash}{LADBBS1}
+  \strng{fullhash}{LADBBS1}
+  \field{booktitle}{Proc. of {RV}'10}
+  \field{pages}{122\bibrangedash 135}
+  \field{title}{Statistical model checking: An overview}
+  \field{year}{2010}
 \endentry
 
-\entry{Oheimb99}{inproceedings}{}
-  \name{author}{1}{}{%
+\entry{ZulianiPC13}{article}{}
+  \name{author}{3}{}{%
     {{}%
-     {Oheimb}{O.}%
-     {David}{D.}%
-     {von}{v.}%
-     {}{}}%
-  }
-  \strng{namehash}{ODv1}
-  \strng{fullhash}{ODv1}
-  \field{booktitle}{Proc. FSTTCS}
-  \field{pages}{168\bibrangedash 180}
-  \field{title}{Hoare Logic for Mutual Recursion and Local Variables}
-  \list{location}{1}{%
-    {Chennai, India}%
-  }
-  \field{year}{1999}
-\endentry
-
-\entry{LalR08}{inproceedings}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Lal}{L.}%
-     {Akash}{A.}%
+     {Zuliani}{Z.}%
+     {Paolo}{P.}%
      {}{}%
      {}{}}%
     {{}%
-     {Reps}{R.}%
-     {Thomas~W.}{T.~W.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{cav2008}
-  \strng{namehash}{LARTW1}
-  \strng{fullhash}{LARTW1}
-  \field{booktitle}{Proc. {CAV}'08}
-  \field{pages}{37\bibrangedash 51}
-  \field{title}{Reducing Concurrent Analysis Under a Context Bound to
-  Sequential Analysis}
-  \list{location}{1}{%
-    {Princeton, NJ, USA}%
-  }
-  \field{year}{2008}
-\endentry
-
-\entry{LalR09}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Lal}{L.}%
-     {Akash}{A.}%
+     {Platzer}{P.}%
+     {Andr\'e}{A.}%
      {}{}%
      {}{}}%
     {{}%
-     {Reps}{R.}%
-     {Thomas~W.}{T.~W.}%
+     {Clarke}{C.}%
+     {Edmund~M.}{E.~M.}%
      {}{}%
      {}{}}%
   }
-  \strng{namehash}{LARTW1}
-  \strng{fullhash}{LARTW1}
-  \field{number}{1}
-  \field{pages}{73\bibrangedash 97}
-  \field{title}{Reducing concurrent analysis under a context bound to
-  sequential analysis}
-  \field{volume}{35}
+  \strng{namehash}{ZPPACEM1}
+  \strng{fullhash}{ZPPACEM1}
+  \field{number}{2}
+  \field{pages}{338\bibrangedash 367}
+  \field{title}{Bayesian statistical model checking with application to
+  {S}tateflow/{S}imulink verification}
+  \field{volume}{43}
   \field{journaltitle}{Formal Methods in System Design}
-  \field{month}{08}
-  \field{year}{2009}
+  \field{month}{10}
+  \field{year}{2013}
 \endentry
 
 \entry{GodefroidKS05}{inproceedings}{}
@@ -715,124 +373,6 @@
   \field{pages}{263\bibrangedash 272}
   \field{title}{{CUTE}: a concolic unit testing engine for {C}}
   \field{year}{2005}
-\endentry
-
-\entry{Angluin87}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Angluin}{A.}%
-     {Dana}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AD1}
-  \strng{fullhash}{AD1}
-  \field{number}{2}
-  \field{pages}{87\bibrangedash 106}
-  \field{title}{Learning regular sets from queries and counterexamples}
-  \field{volume}{75}
-  \field{journaltitle}{Information and Computation}
-  \field{month}{11}
-  \field{year}{1987}
-\endentry
-
-\entry{Angluin88}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Angluin}{A.}%
-     {Dana}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{AD1}
-  \strng{fullhash}{AD1}
-  \field{number}{4}
-  \field{pages}{319\bibrangedash 342}
-  \field{title}{Queries and concept learning}
-  \field{volume}{2}
-  \field{journaltitle}{Machine Learning}
-  \field{month}{04}
-  \field{year}{1988}
-\endentry
-
-\entry{BolligHKL09}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Bollig}{B.}%
-     {Benedikt}{B.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Habermeh}{H.}%
-     {Peter}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Kern}{K.}%
-     {Carsten}{C.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Leucker}{L.}%
-     {Martin}{M.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BBHPKC+1}
-  \strng{fullhash}{BBHPKCLM1}
-  \field{booktitle}{Proc. of {IJCAI}'09}
-  \field{pages}{1004\bibrangedash 1009}
-  \field{title}{Angluin-style learning of {NFA}}
-  \field{year}{2009}
-\endentry
-
-\entry{RivestS93}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Rivest}{R.}%
-     {Ronald~L.}{R.~L.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Schapire}{S.}%
-     {Robert~E.}{R.~E.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{RRLSRE1}
-  \strng{fullhash}{RRLSRE1}
-  \field{number}{2}
-  \field{pages}{299\bibrangedash 347}
-  \field{title}{Inference of finite automata using homing sequences}
-  \field{volume}{103}
-  \field{journaltitle}{Information and Computation}
-  \field{month}{04}
-  \field{year}{1993}
-\endentry
-
-\entry{KearnsV94}{book}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Kearns}{K.}%
-     {Michael~J.}{M.~J.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Vazirani}{V.}%
-     {Umesh~Virkumar}{U.~V.}%
-     {}{}%
-     {}{}}%
-  }
-  \list{publisher}{1}{%
-    {MIT Press}%
-  }
-  \strng{namehash}{KMJVUV1}
-  \strng{fullhash}{KMJVUV1}
-  \field{title}{An Introduction to Computational Learning Theory}
-  \list{location}{1}{%
-    {Cambridge, MA, USA}%
-  }
-  \field{year}{1994}
 \endentry
 
 \entry{CobleighGP03}{inproceedings}{}
@@ -896,25 +436,6 @@
   \field{title}{Learning minimal seperating {DFA}'s for compositional
   verification}
   \field{year}{2009}
-\endentry
-
-\entry{Valiant84}{article}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Valiant}{V.}%
-     {Leslie~G.}{L.~G.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{VLG1}
-  \strng{fullhash}{VLG1}
-  \field{number}{11}
-  \field{pages}{1134\bibrangedash 1142}
-  \field{title}{A theory of the learnable}
-  \field{volume}{27}
-  \field{journaltitle}{Communications of the ACM}
-  \field{month}{11}
-  \field{year}{1984}
 \endentry
 
 \entry{BurnimS08}{inproceedings}{}
@@ -1056,6 +577,59 @@
   \field{year}{2010}
 \endentry
 
+\entry{BeyerK11}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Beyer}{B.}%
+     {Dirk}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Keremoglu}{K.}%
+     {M.~Erkan}{M.~E.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BDKME1}
+  \strng{fullhash}{BDKME1}
+  \field{booktitle}{Proc. {CAV}'11}
+  \field{pages}{184\bibrangedash 190}
+  \field{title}{{CPA}checker: {A} Tool for Configurable Software Verification}
+  \list{location}{1}{%
+    {Snowbird, UT, USA}%
+  }
+  \field{year}{2011}
+\endentry
+
+\entry{ClarkeKL04}{inproceedings}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Clarke}{C.}%
+     {Edmund~M.}{E.~M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kroening}{K.}%
+     {Daniel}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lerda}{L.}%
+     {Flavio}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CEMKDLF1}
+  \strng{fullhash}{CEMKDLF1}
+  \field{booktitle}{Proc. {TACAS}'04}
+  \field{pages}{168\bibrangedash 176}
+  \field{title}{A Tool for Checking {ANSI-C} Programs}
+  \list{location}{1}{%
+    {Barcelona, Spain}%
+  }
+  \field{year}{2004}
+\endentry
+
 \entry{DudkaPV11}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
@@ -1112,150 +686,6 @@
   \field{pages}{343\bibrangedash 361}
   \field{title}{The {S}ea{H}orn verification framework}
   \field{year}{2015}
-\endentry
-
-\entry{Dolzmann97}{article}{}
-  \name{author}{2}{}{%
-    {{}%
-     {Dolzmann}{D.}%
-     {Andreas}{A.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Sturm}{S.}%
-     {Thomas}{T.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{DAST1}
-  \strng{fullhash}{DAST1}
-  \field{number}{2}
-  \field{pages}{2\bibrangedash 9}
-  \field{title}{{REDLOG}: {Computer} Algebra Meets Computer Logic}
-  \field{volume}{31}
-  \field{journaltitle}{SIGSAM Bull.}
-  \field{month}{06}
-  \field{year}{1997}
-\endentry
-
-\entry{redlog}{online}{}
-  \field{title}{Redlog}
-  \verb{url}
-  \verb http://www.redlog.eu/
-  \endverb
-  \field{year}{2015}
-\endentry
-
-\entry{DanglLW15}{inproceedings}{}
-  \name{author}{3}{}{%
-    {{}%
-     {Dangl}{D.}%
-     {Matthias}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {L{\"{o}}we}{L.}%
-     {Stefan}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Wendler}{W.}%
-     {Philipp}{P.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{tacas2015}
-  \strng{namehash}{DMLSWP1}
-  \strng{fullhash}{DMLSWP1}
-  \field{booktitle}{Proc. {TACAS}'15}
-  \field{pages}{423\bibrangedash 425}
-  \field{title}{{CPAchecker} with Support for Recursive Programs and
-  Floating-Point Arithmetic - (Competition Contribution)}
-  \list{location}{1}{%
-    {London, UK}%
-  }
-  \field{year}{2015}
-\endentry
-
-\entry{Reynolds02}{inproceedings}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Reynolds}{R.}%
-     {John~C.}{J.~C.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{RJC1}
-  \strng{fullhash}{RJC1}
-  \field{booktitle}{Proc. {LICS}'02}
-  \field{pages}{55\bibrangedash 74}
-  \field{title}{{Separation Logic}: {A} Logic for Shared Mutable Data
-  Structures}
-  \list{location}{1}{%
-    {Copenhagen, Denmark}%
-  }
-  \field{year}{2002}
-\endentry
-
-\entry{MagillTLT08}{inproceedings}{}
-  \name{author}{4}{}{%
-    {{}%
-     {Magill}{M.}%
-     {Stephen}{S.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tsai}{T.}%
-     {Ming{-}Hsien}{M.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Lee}{L.}%
-     {Peter}{P.}%
-     {}{}%
-     {}{}}%
-    {{}%
-     {Tsay}{T.}%
-     {Yih{-}Kuen}{Y.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{crossref}{cav2008}
-  \strng{namehash}{MSTMLP+1}
-  \strng{fullhash}{MSTMLPTY1}
-  \field{booktitle}{Proc. {CAV}'08}
-  \field{pages}{428\bibrangedash 432}
-  \field{title}{{THOR}: {A} Tool for Reasoning about Shape and Arithmetic}
-  \list{location}{1}{%
-    {Princeton, NJ, USA}%
-  }
-  \field{year}{2008}
-\endentry
-
-\entry{cav2008}{proceedings}{}
-  \field{title}{Proc. 20th Int. Conf. Computer Aided Verification ({CAV}'08)}
-  \list{location}{1}{%
-    {Princeton, NJ, USA}%
-  }
-  \field{year}{2008}
-\endentry
-
-\entry{tacas2015}{proceedings}{}
-  \field{title}{Proc. 21st Int. Conf. Tools and Algorithms for the Construction
-  and Analysis of Systems ({TACAS}'15)}
-  \list{location}{1}{%
-    {London, UK}%
-  }
-  \field{year}{2015}
-\endentry
-
-\entry{tacas2014}{proceedings}{}
-  \field{title}{Proc. 20th Int. Conf. Tools and Algorithms for the Construction
-  and Analysis of Systems ({TACAS}'14)}
-  \list{location}{1}{%
-    {Grenoble, France}%
-  }
-  \field{year}{2014}
 \endentry
 
 \lossort

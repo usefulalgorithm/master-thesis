@@ -1,6 +1,15 @@
-
 \chapter{Related Works}\label{ch:related}
 
+Exact automata learning algorithm was first proposed by Angluin \cite{Angluin87}, and later improved by \cite{Angluin87,RivestS93,KearnsV94,BolligHKL09}. The concept of probably approximately correct (PAC) learning was first proposed by Valiant in his seminal work \cite{Valiant84}. The idea of turning an exact learning algorithm to a PAC learning algorithm can be found in Section 1.2 of \cite{Angluin88}.
+
+Applying PAC learning to testing has been considered before \cite{Walkinshaw11,GoldreichGR98}. The work in \cite{GoldreichGR98} considers a program that manipulates graphs and check if the output graph has certain properties such as bipartite, $k$-colorable, etc. Our work considers assertion checking, which is more general than the specialized properties. The work in \cite{Walkinshaw11} leans more towards the theoretical aspects of the problem. The author estimates the maximal number of queries required to infer a model of a black-box machine. The context is quite different, e.g., the work does not discuss how to sample according to some distribution efficiently to produce the desired guarantee (bounded path coverage) as we do in this paper. 
+
+The $L^\ast$ algoorithm has been used to infer the model of error traces of a program. In \cite{ChapmanCKKST15}, instead of decision vectors, the authors try to learn the sequences of function calls leading to an error. Their teacher is implemented using a bounded model checker, hence can only guarantee correctness up to a given bound. The author do not make use of the PAC learning mechanism as we did in this work. 
+
+Both our approach and statistical model checking \cite{SenVA04,LegayDB10,ZulianiPC13} provide statistical guarantees. Statistical model checking assumes a given model, while our mechanism generates models of programs with statistical guarantee. Those models can be analyzed using various techniques and reused for verifying different properties.
+
+
+\begin{comment}
 Numerous intraprocedural analysis techniques have been developed over the years.
 Many tools are in fact freely available (see, for instance,
 \textsc{Blast}~\cite{BeyerHJM07}, \textsc{CPAchecker}~\cite{BeyerK11}, and
@@ -34,4 +43,5 @@ features is not a new concept.
 We learned this concept particularly from~\cite{LalR08,LalR09},
 where a program transformation technique for checking context-bounded concurrent
 programs to sequential analysis is developed.
+\end{comment}
 

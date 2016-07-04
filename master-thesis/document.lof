@@ -12,23 +12,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CFG of $\mathtt {{func}}$\relax }}{8}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CFG of $\mathtt {{func}}$\relax }}{7}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Components of our learning procedure\relax }}{11}{figure.caption.8}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Detailed flowchart of the learning-based procedure\relax }}{25}{figure.caption.9}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Components of our learning procedure\relax }}{10}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -38,18 +26,18 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.1}{\ignorespaces Unwinding Function Calls\relax }}{36}{figure.caption.10}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.2}{\ignorespaces Under-approximation\relax }}{41}{figure.caption.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.3}{\ignorespaces Updating a Summary\relax }}{43}{figure.caption.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {13.4}{\ignorespaces Instantiating a Summary\relax }}{45}{figure.caption.17}
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Detailed flowchart of the learning-based procedure\relax }}{24}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14.1}{\ignorespaces The Execution Flow of \textsc {CPArec}\relax }}{49}{figure.caption.19}
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {14.2}{\ignorespaces Accumulated Score over Time\relax }}{53}{figure.caption.24}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
