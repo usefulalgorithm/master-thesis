@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  4 JUL 2016 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  7 JUL 2016 11:49
 entering extended mode
 **./document.tex
 (document.tex
@@ -2355,12 +2355,12 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 15.
- [32]) [33]
+ [32]) [33] [34]
 \openout2 = `ch-proving.aux'.
 
  (tex/ch-proving.tex
 Chapter 13.
-) [34
+) [35
 
 
 
@@ -2369,7 +2369,7 @@ Chapter 13.
 
  (tex/ch-experiments.tex
 Chapter 14.
-) [35
+) [36
 
 
 
@@ -2378,7 +2378,7 @@ Chapter 14.
 
  (tex/ch-conclusion.tex
 Chapter 15.
-) [36
+) [37
 
 
 
@@ -2388,7 +2388,7 @@ Overfull \hbox (3.79pt too wide) in paragraph at lines 104--104
 ich-man, and M. Tautschnig,
  []
 
-[37
+[38
 
 
 
@@ -2398,7 +2398,7 @@ Overfull \hbox (0.65222pt too wide) in paragraph at lines 104--104
 : []$\T1/ntxtt/m/n/12 http : / / kerneis . github .$
  []
 
-[38] [39]
+[39] [40]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
@@ -2411,7 +2411,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: B3B34E6A603763FAC63A8B9198C18D54;2144.
+(rerunfilecheck)             Checksum: D0E978981CBB84C494DDA2C03962FD96;2222.
 Package logreq Info: Writing requests to 'document.run.xml'.
 \openout1 = `document.run.xml'.
 
@@ -2421,10 +2421,10 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34981 strings out of 493634
- 628561 string characters out of 3141301
+ 34989 strings out of 493634
+ 628679 string characters out of 3141301
  987559 words of memory out of 3000000
- 37215 multiletter control sequences out of 15000+200000
+ 37219 multiletter control sequences out of 15000+200000
  121164 words of font info for 205 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,14n,94p,1618b,20411s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2509,9 +2509,9 @@ KTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 times/utmri8a.pfb>
-Output written on document.pdf (47 pages, 633881 bytes).
+Output written on document.pdf (48 pages, 638905 bytes).
 PDF statistics:
- 951 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 968 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 529 words of extra memory for PDF output out of 10000 (max. 10000000)
 

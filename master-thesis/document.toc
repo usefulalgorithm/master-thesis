@@ -58,8 +58,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {12.1.3}Handling Membership Queries}{33}{subsection.12.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {13}Proving via Transformation}{34}{chapter.13}
+\contentsline {section}{\numberline {12.2}The Sampling-Based Procedure}{33}{section.12.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}Experiments}{35}{chapter.14}
+\contentsline {chapter}{\numberline {13}Proving via Transformation}{35}{chapter.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {15}Conclusion}{36}{chapter.15}
+\contentsline {chapter}{\numberline {14}Experiments}{36}{chapter.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {15}Conclusion}{37}{chapter.15}

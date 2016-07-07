@@ -688,6 +688,65 @@
   \field{year}{2015}
 \endentry
 
+\entry{svcomp16}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Beyer}{B.}%
+     {Dirk}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BD1}
+  \strng{fullhash}{BD1}
+  \field{booktitle}{Proc. of {TACAS'16}}
+  \field{pages}{887\bibrangedash 904}
+  \field{title}{Reliable and reproducible competition results with
+  {B}ench{E}xec and witnesses (report on {SV-COMP} 2016)}
+  \verb{url}
+  \verb https://sv-comp.sosy-lab.org/2016/
+  \endverb
+  \list{location}{1}{%
+    {Eindhoven, Netherlands}%
+  }
+  \field{year}{2016}
+\endentry
+
+\entry{graphml}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Brandes}{B.}%
+     {Ulrik}{U.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Eiglsperger}{E.}%
+     {Markus}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Herman}{H.}%
+     {Ivan}{I.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Himsolt}{H.}%
+     {Michael}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Marshall}{M.}%
+     {M.~Scott}{M.~S.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BUEMHI+1}
+  \strng{fullhash}{BUEMHIHMMMS1}
+  \field{booktitle}{Graph Drawing}
+  \field{pages}{501\bibrangedash 512}
+  \field{title}{Graph{ML} progress report structural layer proposal}
+  \field{year}{2002}
+\endentry
+
 \lossort
 \endlossort
 
