@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  7 JUL 2016 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  10 JUL 2016 16:18
 entering extended mode
 **./document.tex
 (document.tex
@@ -2150,20 +2150,22 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 
  (tex/ch-introduction.tex
 Chapter 1.
-) [1
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 4.
+[1
 
 
 
-]
+] [2]) [3]
 \openout2 = `tex/ch-related.aux'.
 
  (tex/ch-related.tex
 Chapter 2.
-[2
+[4
 
 
 
-]) [3]
+]) [5]
 \openout2 = `tex/ch-preliminaries.aux'.
 
  (tex/ch-preliminaries.tex
@@ -2174,8 +2176,6 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 4.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
@@ -2189,7 +2189,7 @@ File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 11.
- [4
+ [6
 
 
 
@@ -2209,7 +2209,7 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 37.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 37.
- [5] [6]
+ [7] [8]
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
@@ -2229,7 +2229,7 @@ File: t1txtt.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/it' in size <10> not available
 (Font)              Font shape `T1/txtt/m/sl' tried instead on input line 62.
- [7]) [8]
+ [9]) [10]
 \openout2 = `tex/ch-overview.aux'.
 
 
@@ -2239,31 +2239,31 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 8.8pt on input line 6.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 6.6pt on input line 6.
-[9
+[11
 
 
 
 ]
 Missing character: There is no ; in font nullfont!
- [10]) [11]
+ [12]) [13]
 \openout2 = `tex/ch-pac.aux'.
 
  (tex/ch-pac.tex
 Chapter 5.
-[12
+[14
 
 
 
-] [13] [14]) [15]
+] [15] [16]) [17]
 \openout2 = `tex/ch-equivalence.aux'.
 
  (tex/ch-equivalence.tex
 Chapter 6.
-[16
+[18
 
 
 
-] [17] [18]) [19]
+] [19] [20]) [21]
 \openout2 = `tex/ch-membership.aux'.
 
  (tex/ch-membership.tex
@@ -2276,7 +2276,7 @@ Overfull \hbox (4.17007pt too wide) in paragraph at lines 5--6
 ] $
  []
 
-) [20
+) [22
 
 
 
@@ -2287,16 +2287,16 @@ Overfull \hbox (4.17007pt too wide) in paragraph at lines 5--6
 Chapter 8.
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/it' will be
 (Font)              scaled to size 12.0pt on input line 8.
-) [21
+) [23
 
 
 
-] [22]
+] [24]
 \openout2 = `tex/ch-learning.aux'.
 
  (tex/ch-learning.tex
 Chapter 9.
-[23
+[25
 
 
 
@@ -2313,37 +2313,37 @@ Overfull \hbox (56.94781pt too wide) in paragraph at lines 55--56
  [][] 
  []
 
-[24]
+[26]
 Overfull \hbox (1.39479pt too wide) in paragraph at lines 69--70
 []\T1/ntxtlf/m/it/12 Suppose our learn-ing pro-ce-dure re-ports a pro-gram $\OM
 L/ntxmi/m/it/12 P$ \T1/ntxtlf/m/it/12 as $\OML/ntxmi/m/it/12 PAC\U/ntxmia/m/it/
 12 }\OML/ntxmi/m/it/12 ; \U/ntxmia/m/it/12 ~[]$\T1/ntxtlf/m/it/12 .
  []
 
-) [25]
+) [27]
 \openout2 = `tex/ch-procedure_calls.aux'.
 
  (tex/ch-procedure_calls.tex
 Chapter 10.
-[26
+[28
 
 
 
-] [27]) [28]
+] [29]) [30]
 \openout2 = `tex/ch-sampling.aux'.
 
  (tex/ch-sampling.tex
 Chapter 11.
-[29
+[31
 
 
 
-]) [30]
+]) [32]
 \openout2 = `tex/ch-implementation.aux'.
 
  (tex/ch-implementation.tex
 Chapter 12.
-[31
+[33
 
 
 
@@ -2354,12 +2354,12 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 15.
- [32]) [33] [34]
+ [34]) [35] [36]
 \openout2 = `tex/ch-experiments.aux'.
 
  (tex/ch-experiments.tex
 Chapter 13.
-) [35
+) [37
 
 
 
@@ -2368,7 +2368,7 @@ Chapter 13.
 
  (tex/ch-conclusion.tex
 Chapter 14.
-) [36
+) [38
 
 
 
@@ -2378,7 +2378,7 @@ Overfull \hbox (3.79pt too wide) in paragraph at lines 103--103
 ich-man, and M. Tautschnig,
  []
 
-[37
+[39
 
 
 
@@ -2388,7 +2388,7 @@ Overfull \hbox (0.65222pt too wide) in paragraph at lines 103--103
 : []$\T1/ntxtt/m/n/12 http : / / kerneis . github .$
  []
 
-[38] [39]
+[40] [41]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
@@ -2410,11 +2410,11 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34977 strings out of 493634
- 628504 string characters out of 3141301
+ 34997 strings out of 493634
+ 628760 string characters out of 3141301
  987559 words of memory out of 3000000
- 37216 multiletter control sequences out of 15000+200000
- 121164 words of font info for 205 fonts, out of 3000000 for 9000
+ 37232 multiletter control sequences out of 15000+200000
+ 121458 words of font info for 206 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,14n,94p,1618b,20411s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-t
@@ -2446,61 +2446,62 @@ les (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu63.pfb><C:/Program Files (x8
 eX 2.9/fonts/type1/arphic/bkaiu/bkaiu65.pfb><C:/Program Files (x86)/MiKTeX 2.9/
 fonts/type1/arphic/bkaiu/bkaiu66.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
 ype1/arphic/bkaiu/bkaiu67.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ar
-phic/bkaiu/bkaiu6a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bk
-aiu/bkaiu6b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bka
-iu6c.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6e.pf
-b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6f.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu70.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu71.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu74.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/arphic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/arphic/bkaiu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-arphic/bkaiu/bkaiu78.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/
-bkaiu/bkaiu7a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/b
-kaiu7b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7e.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu82.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/arphic/bkaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/arphic/bkaiu/bkaiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/arphic/bkaiu/bkaiu89.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphi
-c/bkaiu/bkaiu8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu
-/bkaiu8b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8
-c.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8e.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8f.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/arphic/bkaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/arphic/bkaiu/bkaiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/arphic/bkaiu/bkaiu97.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
-hic/bkaiu/bkaiu98.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
-iu/bkaiu9a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
-u9e.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiuff.pfb
-><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/newtx/rntxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/newtx/rntxmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/txfonts/rtxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/txfonts/rtxr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/tx
-fonts/t1xbtt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/
-t1xtt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.p
-fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/newtx/txex-bar.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txmia.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.
-9/fonts/type1/public/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on document.pdf (47 pages, 640650 bytes).
+phic/bkaiu/bkaiu69.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bk
+aiu/bkaiu6a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bka
+iu6b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6c.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6e.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu6f.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu70.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu71.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu73.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/arphic/bkaiu/bkaiu74.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/arphic/bkaiu/bkaiu75.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+arphic/bkaiu/bkaiu76.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/
+bkaiu/bkaiu78.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/b
+kaiu7a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7b.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7d.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu7e.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu80.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu81.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu82.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/arphic/bkaiu/bkaiu83.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/arphic/bkaiu/bkaiu86.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/arphic/bkaiu/bkaiu88.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphi
+c/bkaiu/bkaiu89.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu
+/bkaiu8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8
+b.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8c.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8e.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu8f.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu90.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu91.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/arphic/bkaiu/bkaiu93.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/arphic/bkaiu/bkaiu95.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/arphic/bkaiu/bkaiu96.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arp
+hic/bkaiu/bkaiu97.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bka
+iu/bkaiu98.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkai
+u9a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiu9e.pfb
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/arphic/bkaiu/bkaiuff.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/newtx/rntxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/public/newtx/rntxmi7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/txfonts/rtxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/t
+xfonts/rtxr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t
+1xbtt.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/t1xtt.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/newtx/txex-bar.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txex.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/txfonts/txmia.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on document.pdf (49 pages, 651259 bytes).
 PDF statistics:
- 968 PDF objects out of 1000 (max. 8388607)
- 138 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 983 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
+ 525 words of extra memory for PDF output out of 10000 (max. 10000000)
 
