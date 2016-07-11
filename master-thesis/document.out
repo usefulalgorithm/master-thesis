@@ -2,31 +2,32 @@
 \BOOKMARK [0][-]{chapter*.2}{\144\130\211\201}{}% 2
 \BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
-\BOOKMARK [0][-]{chapter.2}{Related Works}{}% 5
-\BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 6
-\BOOKMARK [1][-]{section.3.1}{Program Model}{chapter.3}% 7
-\BOOKMARK [1][-]{section.3.2}{Two Classes of Automata}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.3}{Concolic Testing}{chapter.3}% 9
-\BOOKMARK [0][-]{chapter.4}{Overview}{}% 10
-\BOOKMARK [0][-]{chapter.5}{PAC Automata Learning}{}% 11
-\BOOKMARK [1][-]{section.5.1}{Exact Learning of Regular Languages}{chapter.5}% 12
-\BOOKMARK [1][-]{section.5.2}{Learning for Program Verification}{chapter.5}% 13
-\BOOKMARK [1][-]{section.5.3}{Probably Approximately Correct Learning}{chapter.5}% 14
-\BOOKMARK [0][-]{chapter.6}{Resolving Equivalence Queries By Sampling}{}% 15
-\BOOKMARK [1][-]{section.6.1}{Applying Concolic Tester}{chapter.6}% 16
-\BOOKMARK [1][-]{section.6.2}{Generalized Stochastic Equivalence}{chapter.6}% 17
-\BOOKMARK [0][-]{chapter.7}{Resolving Membership Queries}{}% 18
-\BOOKMARK [0][-]{chapter.8}{Error Decision Vectors}{}% 19
-\BOOKMARK [0][-]{chapter.9}{The Learning-based Procedure}{}% 20
-\BOOKMARK [0][-]{chapter.10}{Handling Procedure Calls}{}% 21
-\BOOKMARK [1][-]{section.10.1}{Extending CFGs with Procedure Calls}{chapter.10}% 22
-\BOOKMARK [1][-]{section.10.2}{Encoding Error Decision Vectors with Pushdown Automata}{chapter.10}% 23
-\BOOKMARK [0][-]{chapter.11}{The Sampling-based Procedure}{}% 24
-\BOOKMARK [0][-]{chapter.12}{Implementation}{}% 25
-\BOOKMARK [1][-]{section.12.1}{The Learning-Based Procedure}{chapter.12}% 26
-\BOOKMARK [2][-]{subsection.12.1.1}{Intersection with Bad Automaton}{section.12.1}% 27
-\BOOKMARK [2][-]{subsection.12.1.2}{Counterexample from the Learning Algorithm}{section.12.1}% 28
-\BOOKMARK [2][-]{subsection.12.1.3}{Handling Membership Queries}{section.12.1}% 29
-\BOOKMARK [1][-]{section.12.2}{The Sampling-Based Procedure}{chapter.12}% 30
-\BOOKMARK [0][-]{chapter.13}{Experiments}{}% 31
-\BOOKMARK [0][-]{chapter.14}{Conclusion}{}% 32
+\BOOKMARK [1][-]{section.1.1}{PAC Learning: An Introduction}{chapter.1}% 5
+\BOOKMARK [0][-]{chapter.2}{Related Works}{}% 6
+\BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 7
+\BOOKMARK [1][-]{section.3.1}{Program Model}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.2}{Two Classes of Automata}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Concolic Testing}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter.4}{Overview}{}% 11
+\BOOKMARK [0][-]{chapter.5}{PAC Automata Learning}{}% 12
+\BOOKMARK [1][-]{section.5.1}{Exact Learning of Regular Languages}{chapter.5}% 13
+\BOOKMARK [1][-]{section.5.2}{Learning for Program Verification}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.3}{Probably Approximately Correct Learning}{chapter.5}% 15
+\BOOKMARK [0][-]{chapter.6}{Resolving Equivalence Queries By Sampling}{}% 16
+\BOOKMARK [1][-]{section.6.1}{Applying Concolic Tester}{chapter.6}% 17
+\BOOKMARK [1][-]{section.6.2}{Generalized Stochastic Equivalence}{chapter.6}% 18
+\BOOKMARK [0][-]{chapter.7}{Resolving Membership Queries}{}% 19
+\BOOKMARK [0][-]{chapter.8}{Error Decision Vectors}{}% 20
+\BOOKMARK [0][-]{chapter.9}{The Learning-based Procedure}{}% 21
+\BOOKMARK [0][-]{chapter.10}{Handling Procedure Calls}{}% 22
+\BOOKMARK [1][-]{section.10.1}{Extending CFGs with Procedure Calls}{chapter.10}% 23
+\BOOKMARK [1][-]{section.10.2}{Encoding Error Decision Vectors with Pushdown Automata}{chapter.10}% 24
+\BOOKMARK [0][-]{chapter.11}{The Sampling-based Procedure}{}% 25
+\BOOKMARK [0][-]{chapter.12}{Implementation}{}% 26
+\BOOKMARK [1][-]{section.12.1}{The Learning-Based Procedure}{chapter.12}% 27
+\BOOKMARK [2][-]{subsection.12.1.1}{Intersection with Bad Automaton}{section.12.1}% 28
+\BOOKMARK [2][-]{subsection.12.1.2}{Counterexample from the Learning Algorithm}{section.12.1}% 29
+\BOOKMARK [2][-]{subsection.12.1.3}{Handling Membership Queries}{section.12.1}% 30
+\BOOKMARK [1][-]{section.12.2}{The Sampling-Based Procedure}{chapter.12}% 31
+\BOOKMARK [0][-]{chapter.13}{Experiments}{}% 32
+\BOOKMARK [0][-]{chapter.14}{Conclusion}{}% 33
