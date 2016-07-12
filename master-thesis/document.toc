@@ -66,4 +66,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {13}Experiments}{39}{chapter.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {14}Conclusion}{40}{chapter.14}
+\contentsline {section}{\numberline {13.1}Comparison of Learning Algorithms}{40}{section.13.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.2}Comparison of Search Strategies}{41}{section.13.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.3}Evaluation of \textsc {Crest} with Restarts}{41}{section.13.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.4}Evaluting Quality of Learned Automata}{42}{section.13.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.5}Comparing the Two Modes of \textsc {Pac-Man} }{43}{section.13.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {14}Conclusion}{44}{chapter.14}

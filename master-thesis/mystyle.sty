@@ -5,6 +5,10 @@
 \RequirePackage{bussproofs} % For writing logic proof
 \RequirePackage{hyperref} % For hyperlinking equations
 % \RequirePackage{indentfirst} % Always indent at the head of paragraphs
+\RequirePackage{nth} % Generate English ordinal numbers
+\RequirePackage{float} % To put float objects at specified position
+\RequirePackage{footnote}
+\makesavenoteenv{tabular}
 
 \RequirePackage{verbatim} % For comment blocks
 \RequirePackage{tikz} % For tikzpicture
@@ -32,6 +36,7 @@
 \newcommand{\DEC}{\mathsf{decision}}
 \newcommand{\PAC}[0] {PAC(\epsilon, \delta)\text{-correct}}
 \newcommand{\PACMAN}{\textsc{Pac-Man} }
+\newcommand{\CREST}{\textsc{Crest} }
 
 
 \newcommand{\hide}[1]{}%{#1}}

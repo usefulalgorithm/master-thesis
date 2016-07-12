@@ -16,10 +16,27 @@
   {}
 \endgroup
 
-\entry{svcomp2015}{misc}{}
-  \field{note}{http://sv-comp.sosy-lab.org/2015/}
-  \field{title}{Software verification competition 2015}
-  \field{year}{2015}
+\entry{svcomp16}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Beyer}{B.}%
+     {Dirk}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BD1}
+  \strng{fullhash}{BD1}
+  \field{booktitle}{Proc. of {TACAS}'16}
+  \field{pages}{887\bibrangedash 904}
+  \field{title}{Reliable and reproducible competition results with
+  {B}ench{E}xec and witnesses (report on {SV-COMP} 2016)}
+  \verb{url}
+  \verb https://sv-comp.sosy-lab.org/2016/
+  \endverb
+  \list{location}{1}{%
+    {Eindhoven, Netherlands}%
+  }
+  \field{year}{2016}
 \endentry
 
 \entry{Angluin87}{article}{}
@@ -579,29 +596,6 @@
   \field{year}{2008}
 \endentry
 
-\entry{svcomp16}{inproceedings}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Beyer}{B.}%
-     {Dirk}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BD1}
-  \strng{fullhash}{BD1}
-  \field{booktitle}{Proc. of {TACAS'16}}
-  \field{pages}{887\bibrangedash 904}
-  \field{title}{Reliable and reproducible competition results with
-  {B}ench{E}xec and witnesses (report on {SV-COMP} 2016)}
-  \verb{url}
-  \verb https://sv-comp.sosy-lab.org/2016/
-  \endverb
-  \list{location}{1}{%
-    {Eindhoven, Netherlands}%
-  }
-  \field{year}{2016}
-\endentry
-
 \entry{GodefroidKS05}{inproceedings}{}
   \name{author}{3}{}{%
     {{}%
@@ -751,6 +745,35 @@
   \field{pages}{501\bibrangedash 512}
   \field{title}{Graph{ML} progress report structural layer proposal}
   \field{year}{2002}
+\endentry
+
+\entry{svcomp15}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Beyer}{B.}%
+     {Dirk}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BD1}
+  \strng{fullhash}{BD1}
+  \field{booktitle}{Proc. of {TACAS}'15}
+  \field{pages}{401\bibrangedash 416}
+  \field{title}{Software Verification and Verifiable Witnesses}
+  \verb{url}
+  \verb https://sv-comp.sosy-lab.org/2015/
+  \endverb
+  \list{location}{1}{%
+    {London, UK}%
+  }
+  \field{year}{2015}
+\endentry
+
+\entry{svcomp-benchmarks}{misc}{}
+  \field{title}{{SV-COMP} benchmark suite}
+  \verb{url}
+  \verb https://github.com/sosy-lab/sv-benchmarks
+  \endverb
 \endentry
 
 \lossort
