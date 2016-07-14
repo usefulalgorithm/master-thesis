@@ -1,22 +1,12 @@
 
 \chapter{Abstract}
 
-Recursion can complicate program analysis significantly.
-Some program analyzers simply ignore recursion or even refuse to check recursive
-programs.
-In this paper, we propose an algorithm that uses a recursion-free program
-analyzer as a black box to check recursive programs.
-With extended program constructs for assumptions, assertions, and
-non-deterministic values,
-our algorithm computes function summaries from inductive invariants computed by
-the underlying program analyzer.
-Such function summaries enable our algorithm to check recursive programs.
-We implement a prototype named \textsc{CPArec} using the recursion-free program
-analyzer \textsc{CPAchecker}.
-Under the comparison with other program analyzers on the benchmarks in the 2014
-and 2015 Competitions on Software Verification,
-our tool shows competitive efficiency and effectiveness on verifying programs
-with recursion.
+In this work, we introduce two novel techniques for software testing and model synthesis of sequential programs, the learning-based and the sampling-based techniques. With these two techinques, we hope to diminish the distinctions between software testing and formal verification by providing a statistical guarantee while being scalable. 
 
-Key words: CPArec, Software Verification, Program Analysis, Static Analysis,
-Recursion, Program Transformation
+Our learning-based technique is based on learning a regular model of the set of feasible paths in a program, and testing whether this model contains an incorrect behavior. Exact learning algorithms require checking equivalence between the model and the program, which is in general undecidable. Our learning procedure is therefore based on the framework of probably approximately correct (PAC) learning, which uses sampling instead and provides correctness guarantees expressed using the terms \emph{error probability} and \emph{confidence level}. In addition, our procedure also outputs the model with the said correctness guarantees. 
+
+Another technique we propose is the sampling-based approach, which is also based on the guarantees provided by PAC learning. We utilized concolic testers as samplers to obtain samples of execution traces of the program-under-tests, then conclude whether the programs contain feasible error traces, are free from error with PAC guarantee, or are of unknown results due to insufficient computational resources. 
+
+We implemented the abovementioned two techniques with a prototype called \PACMAN. Furthermore, obtained preliminary experiments show encouraging results, in some cases even outperforming mature software verifiers. As a result, we submitted \PACMAN's implementation of the sampling-based techinque to participate in Software Verification Competition (SV-COMP) 2016. We ranked \nth{5} in the recursive subcategory, and \nth{4} in the array-reach subcategory. Moreover, we submitted a paper illustrating the learning-based procedure to the International Conference on Software Engineering (ICSE) 2016, and was successfully accepted.   
+
+Key words: \PACMAN, Software Testing, Program Analysis, Model Synthesis, PAC Learning

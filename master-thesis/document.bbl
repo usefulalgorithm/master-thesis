@@ -61,6 +61,56 @@
   \field{year}{2016}
 \endentry
 
+\entry{ChenHLLTWW16}{inproceedings}{}
+  \name{author}{7}{}{%
+    {{}%
+     {Chen}{C.}%
+     {Yu{-}Fang}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hsieh}{H.}%
+     {Chiao}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Leng\'{a}l}{L.}%
+     {Ond\v{r}ej}{O.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Lii}{L.}%
+     {Tsung{-}Ju}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Tsai}{T.}%
+     {Ming{-}Hsien}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Bow{-}Yaw}{B.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Farn}{F.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{crossref}{icse2016}
+  \strng{namehash}{CYHCLO+1}
+  \strng{fullhash}{CYHCLOLTTMWBWF1}
+  \field{booktitle}{Proc. of {ICSE}'16}
+  \field{pages}{714\bibrangedash 724}
+  \field{title}{{PAC} learning-based verification and model synthesis}
+  \list{location}{1}{%
+    {Austin, TX, USA}%
+  }
+  \field{year}{2016}
+\endentry
+
 \entry{icse2016}{proceedings}{}
   \field{title}{Proc. 38th Int. Conf. Software Engineering ({ICSE}'16)}
   \list{location}{1}{%
