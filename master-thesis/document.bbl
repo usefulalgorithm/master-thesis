@@ -16,6 +16,28 @@
   {}
 \endgroup
 
+\entry{svcomp15}{inproceedings}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Beyer}{B.}%
+     {Dirk}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BD1}
+  \strng{fullhash}{BD1}
+  \field{booktitle}{Proc. of {TACAS}'15}
+  \field{pages}{401\bibrangedash 416}
+  \field{title}{Software Verification and Verifiable Witnesses}
+  \verb{url}
+  \verb https://sv-comp.sosy-lab.org/2015/
+  \endverb
+  \list{location}{1}{%
+    {London, UK}%
+  }
+  \field{year}{2015}
+\endentry
+
 \entry{svcomp16}{inproceedings}{}
   \name{author}{1}{}{%
     {{}%
@@ -35,6 +57,14 @@
   \endverb
   \list{location}{1}{%
     {Eindhoven, Netherlands}%
+  }
+  \field{year}{2016}
+\endentry
+
+\entry{icse2016}{proceedings}{}
+  \field{title}{Proc. 38th Int. Conf. Software Engineering ({ICSE}'16)}
+  \list{location}{1}{%
+    {Austin, TX, USA}%
   }
   \field{year}{2016}
 \endentry
@@ -572,7 +602,7 @@
   \verb{url}
   \verb http://kerneis.github.io/cil/
   \endverb
-  \field{year}{2015}
+  \field{year}{2016}
 \endentry
 
 \entry{BurnimS08}{inproceedings}{}
@@ -711,6 +741,62 @@
   \field{year}{2009}
 \endentry
 
+\entry{libamore++}{online}{}
+  \field{title}{lib{AM}o{RE}++}
+  \verb{url}
+  \verb http://libalf.informatik.rwth-aachen.de/
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{libalf}{online}{}
+  \field{title}{lib{ALF}}
+  \verb{url}
+  \verb http://libalf.informatik.rwth-aachen.de/
+  \endverb
+  \field{year}{2011}
+\endentry
+
+\entry{cpachecker}{online}{}
+  \field{title}{{CPA}checker}
+  \verb{url}
+  \verb http://cpachecker.sosy-lab.org/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{cbmc}{online}{}
+  \field{title}{{CBMC}}
+  \verb{url}
+  \verb http://www.cprover.org/cbmc/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{predator}{online}{}
+  \field{title}{{P}redator}
+  \verb{url}
+  \verb http://www.fit.vutbr.cz/research/groups/verifit/tools/predator/
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{seahorn}{online}{}
+  \field{title}{{S}ea{H}orn}
+  \verb{url}
+  \verb https://bitbucket.org/lememta/seahorn/wiki/Home
+  \endverb
+  \field{year}{2016}
+\endentry
+
+\entry{crest}{online}{}
+  \field{title}{{C}rest}
+  \verb{url}
+  \verb http://www.burn.im/crest/
+  \endverb
+  \field{year}{2014}
+\endentry
+
 \entry{graphml}{inproceedings}{}
   \name{author}{5}{}{%
     {{}%
@@ -745,28 +831,6 @@
   \field{pages}{501\bibrangedash 512}
   \field{title}{Graph{ML} progress report structural layer proposal}
   \field{year}{2002}
-\endentry
-
-\entry{svcomp15}{inproceedings}{}
-  \name{author}{1}{}{%
-    {{}%
-     {Beyer}{B.}%
-     {Dirk}{D.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{BD1}
-  \strng{fullhash}{BD1}
-  \field{booktitle}{Proc. of {TACAS}'15}
-  \field{pages}{401\bibrangedash 416}
-  \field{title}{Software Verification and Verifiable Witnesses}
-  \verb{url}
-  \verb https://sv-comp.sosy-lab.org/2015/
-  \endverb
-  \list{location}{1}{%
-    {London, UK}%
-  }
-  \field{year}{2015}
 \endentry
 
 \entry{svcomp-benchmarks}{misc}{}

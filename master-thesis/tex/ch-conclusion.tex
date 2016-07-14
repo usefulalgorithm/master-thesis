@@ -1,5 +1,13 @@
-
 \chapter{Conclusion}\label{ch:conclusion}
+
+In this work, we applied the \emph{probably-approximate-correct} (PAC) learning framework and its guarantee to the task of checking the validity of program assertions. More specifically, we propose the $\PAC$ guarantee, which is based on the guarantee provided by PAC learning. We proposed two approaches, the \emph{learning-based} and the \emph{sampling-based} approach, to handle the task. 
+
+Both the learning-based and the sampling-based approaches utilize the $\PAC$ guarantee to provide correctness insurance of the program-under-test. The learning-based procedure makes use of a modified version of the automata learning framework mentioned in \cite{Angluin87}, which can handle the scenario when a target automaton contains an error, and replaces the checking of exact equivalence with sampling in order to provide programs with the $\PAC$ness guarantee. Moreover, the learning-based procedure incorporates several additional tests to enhance the performance. On the other hand, the sampling-based procedure directly takes the requirements $\PAC$ guarantee to calculate the number of samples necessary to provide programs with correctness insurance. It is also possible to execute the sampling-based procedure with several search strategies of the sampler.
+
+We implemented a prototype named \PACMAN based on the two procedures. \PACMAN supports two modes, the \emph{synthesize-and-verify} mode and the \emph{direct} mode, implementing the learning-based and the sampling-based procedure respectively. We utilized several third-party components, such as software model checkers such as \textsc{CPAchecker} \cite{cpachecker} and CBMC \cite{cbmc}, the concolic tester \textsc{Crest} \cite{crest}, and the libraries CIL \cite{cil}, \textsc{libALF} \cite{libalf} and \textsc{libAMoRE++} \cite{libamore++}. In addition, we conducted experiments to determine the best learning algorithm and search strategy of the concolic tester with respect to performance. We submitted \PACMAN in \emph{direct} mode to participate in the recursive and array-reach subcategories of SV-COMP 2016 \cite{svcomp16}, and achieved promising results. Moreover, we submitted the learning-based procedeure to ICSE 2016 \cite{icse2016}, and was successfully accepted. 
+
+Finally, it is possible to extend our approaches with different enhancement methods, such as applying heuristics, use sampling mechanisms with different distributions, etc. It is also viable to modify our learning-based approach so that it constructs automata approximating programs' function call graph instead of the control flow graph. With this work, we hope to find a balance between scalability and correctness guarantees by applying the PAC guarantee on the learning-based and sampling-based procedures, thus blurring the dichotomy between program testing and formal methods. 
+
 \begin{comment}
 % Extension: using program analyzer + bounded model checking
 
