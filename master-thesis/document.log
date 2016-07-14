@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  12 JUL 2016 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.23)  14 JUL 2016 11:49
 entering extended mode
 **./document.tex
 (document.tex
@@ -1310,10 +1310,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box46
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mdwtools\footnote.sty"
-Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box47
-\fn@width=\dimen153
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen153
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
@@ -1334,7 +1332,7 @@ x"
 sts.tex"))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
 "
-\pgfutil@abb=\box48
+\pgfutil@abb=\box47
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -1407,7 +1405,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 "
 \pgfmath@dimen=\dimen164
 \pgfmath@count=\count352
-\pgfmath@box=\box49
+\pgfmath@box=\box48
 \pgfmath@toks=\toks39
 \pgfmath@stack@operand=\toks40
 \pgfmath@stack@operation=\toks41
@@ -1466,9 +1464,9 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
 de.tex"
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box50
-\pgf@hbox=\box51
-\pgf@layerbox@main=\box52
+\pgfpic=\box49
+\pgf@hbox=\box50
+\pgf@layerbox@main=\box51
 \pgf@picture@serial@count=\count354
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
@@ -1513,7 +1511,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
 code.tex"
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box53
+\pgfexternal@startupbox=\box52
 ))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
 de.tex"
@@ -1530,7 +1528,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
 e.tex"
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box54
+\pgfnodeparttextbox=\box53
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
 tex"
@@ -1576,10 +1574,10 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen197
 \tikzleveldistance=\dimen198
 \tikzsiblingdistance=\dimen199
-\tikz@figbox=\box55
-\tikz@figbox@bg=\box56
-\tikz@tempbox=\box57
-\tikz@tempbox@bg=\box58
+\tikz@figbox=\box54
+\tikz@figbox@bg=\box55
+\tikz@tempbox=\box56
+\tikz@tempbox@bg=\box57
 \tikztreelevel=\count357
 \tikznumberofchildren=\count358
 \tikznumberofcurrentchild=\count359
@@ -1658,26 +1656,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 shapes.multipart.code.tex"
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box59
-\pgfnodeparttwobox=\box60
-\pgfnodepartthreebox=\box61
-\pgfnodepartfourbox=\box62
-\pgfnodeparttwentybox=\box63
-\pgfnodepartnineteenbox=\box64
-\pgfnodeparteighteenbox=\box65
-\pgfnodepartseventeenbox=\box66
-\pgfnodepartsixteenbox=\box67
-\pgfnodepartfifteenbox=\box68
-\pgfnodepartfourteenbox=\box69
-\pgfnodepartthirteenbox=\box70
-\pgfnodeparttwelvebox=\box71
-\pgfnodepartelevenbox=\box72
-\pgfnodeparttenbox=\box73
-\pgfnodepartninebox=\box74
-\pgfnodeparteightbox=\box75
-\pgfnodepartsevenbox=\box76
-\pgfnodepartsixbox=\box77
-\pgfnodepartfivebox=\box78
+\pgfnodepartlowerbox=\box58
+\pgfnodeparttwobox=\box59
+\pgfnodepartthreebox=\box60
+\pgfnodepartfourbox=\box61
+\pgfnodeparttwentybox=\box62
+\pgfnodepartnineteenbox=\box63
+\pgfnodeparteighteenbox=\box64
+\pgfnodepartseventeenbox=\box65
+\pgfnodepartsixteenbox=\box66
+\pgfnodepartfifteenbox=\box67
+\pgfnodepartfourteenbox=\box68
+\pgfnodepartthirteenbox=\box69
+\pgfnodeparttwelvebox=\box70
+\pgfnodepartelevenbox=\box71
+\pgfnodeparttenbox=\box72
+\pgfnodepartninebox=\box73
+\pgfnodeparteightbox=\box74
+\pgfnodepartsevenbox=\box75
+\pgfnodepartsixbox=\box76
+\pgfnodepartfivebox=\box77
 )))
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
 s\tikzlibrarycalc.code.tex"
@@ -1685,7 +1683,7 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box79
+\@vwid@box=\box78
 \sift@deathcycles=\count365
 \@vwid@loff=\dimen257
 \@vwid@roff=\dimen258
@@ -1730,28 +1728,25 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\import\import.sty"
 Package: import 2009/03/23  v 5.1
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
-\bigstrutjot=\dimen267
-)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count370
-\lst@gtempboxa=\box80
+\lst@gtempboxa=\box79
 \lst@token=\toks45
 \lst@length=\count371
-\lst@currlwidth=\dimen268
+\lst@currlwidth=\dimen267
 \lst@column=\count372
 \lst@pos=\count373
-\lst@lostspace=\dimen269
-\lst@width=\dimen270
+\lst@lostspace=\dimen268
+\lst@width=\dimen269
 \lst@newlines=\count374
 \lst@lineno=\count375
-\lst@maxwidth=\dimen271
+\lst@maxwidth=\dimen270
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count376
 \lst@skipnumbers=\count377
-\lst@framebox=\box81
+\lst@framebox=\box80
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1931,18 +1926,18 @@ LaTeX Font Info:    ... okay on input line 49.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count384
-\scratchdimen=\dimen272
-\scratchbox=\box82
+\scratchdimen=\dimen271
+\scratchbox=\box81
 \nofMPsegments=\count385
 \nofMParguments=\count386
 \everyMPshowfont=\toks46
 \MPscratchCnt=\count387
-\MPscratchDim=\dimen273
+\MPscratchDim=\dimen272
 \MPnumerator=\count388
 \makeMPintoPDFobject=\count389
 \everyMPtoPDFconversion=\toks47
 )
-\AtBeginShipoutBox=\box83
+\AtBeginShipoutBox=\box82
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
@@ -2323,10 +2318,10 @@ Chapter 9.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
 meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen274
-\pgfarrowlength=\dimen275
-\pgfarrowwidth=\dimen276
-\pgfarrowlinewidth=\dimen277
+\pgfarrowinset=\dimen273
+\pgfarrowlength=\dimen274
+\pgfarrowwidth=\dimen275
+\pgfarrowlinewidth=\dimen276
 )
 Overfull \hbox (56.94781pt too wide) in paragraph at lines 55--56
  [][] 
@@ -2388,12 +2383,14 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/bx/sc' in size <17.28> not available
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/sc' will be
 (Font)              scaled to size 17.28pt on input line 83.
- [41] [42]) [43]
+ [41] [42] [43] [44] [45
+
+]) [46]
 \openout2 = `tex/ch-conclusion.aux'.
 
  (tex/ch-conclusion.tex
 Chapter 14.
-) [44
+) [47
 
 
 
@@ -2403,7 +2400,7 @@ Overfull \hbox (3.79pt too wide) in paragraph at lines 103--103
 ich-man, and M. Tautschnig,
  []
 
-[45
+[48
 
 
 
@@ -2413,7 +2410,7 @@ Overfull \hbox (0.65222pt too wide) in paragraph at lines 103--103
 : []$\T1/ntxtt/m/n/12 http : / / kerneis . github .$
  []
 
-[46] [47]
+[49] [50]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (document.aux (tex/acknowledgements.aux) (tex/abstractZH.aux)
@@ -2435,13 +2432,13 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 35152 strings out of 493634
- 631153 string characters out of 3141301
- 989556 words of memory out of 3000000
- 37352 multiletter control sequences out of 15000+200000
+ 35115 strings out of 493634
+ 630575 string characters out of 3141301
+ 988996 words of memory out of 3000000
+ 37313 multiletter control sequences out of 15000+200000
  124506 words of font info for 207 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,15n,94p,1618b,20529s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,15n,94p,1618b,20485s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec
 -tlf-sc.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.e
 nc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Pro
@@ -2524,9 +2521,9 @@ iKTeX 2.9/fonts/type1/public/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.
 /type1/public/txfonts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on document.pdf (55 pages, 685767 bytes).
+Output written on document.pdf (58 pages, 695357 bytes).
 PDF statistics:
- 1085 PDF objects out of 1200 (max. 8388607)
- 163 named destinations out of 1000 (max. 500000)
+ 1103 PDF objects out of 1200 (max. 8388607)
+ 168 named destinations out of 1000 (max. 500000)
  581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
